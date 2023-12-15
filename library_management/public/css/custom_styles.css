@@ -1,0 +1,12 @@
+/* Example: Override primary button color */
+.btn-primary {
+    background-color: #db3434 !important;
+    border-color: #db3434 !important;
+}
+
+/* Example: Override background color of the sidebar */
+.sidebar {
+    background-color: #2c3e50 !important;
+}
+
+/* Add more custom styles as needed */

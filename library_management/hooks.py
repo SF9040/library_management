@@ -9,6 +9,9 @@ app_license = "MIT"
 
 # Includes in <head>
 # ------------------
+app_include_css = [
+    "/assets/library_management/css/custom_styles.css"
+]
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/library_management/css/library_management.css"
