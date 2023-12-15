@@ -89,4 +89,15 @@ input::placeholder {
 mark, .mark {
     background-color: #ffcc00 !important;
 }
+
+.search-bar .awesomplete input {
+    border-radius: 16.5px !important;
+}
+
+.search-bar .awesomplete input:focus {
+    border-radius: 16.5px !important;
+    background-color: var(--control-bg) !important;
+    background-clip: padding-box !important;
+    box-shadow:  none !important;
+}
 /* Add more custom styles as needed */
