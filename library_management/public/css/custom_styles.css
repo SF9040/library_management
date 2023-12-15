@@ -38,7 +38,6 @@ body {
 
 .page-title .title-area .title-text {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto", "Sarabun", "Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif !important;
-    text-transform: uppercase !important;
     font-weight: 700 !important;
     color: #1a1a1a !important; 
 }
@@ -51,6 +50,13 @@ body {
 input::placeholder {
     color: var(--text-muted) !important;
 }
+::-ms-input-placeholder { /* Edge 12-18 */
+    color: var(--text-muted) !important;
+  }
+  
+::placeholder {
+    color: var(--text-muted) !important;
+  }
 
 #navbar-breadcrumbs > li:not(:last-child) > a {
     color: #a1aab5 !important;
@@ -63,7 +69,24 @@ input::placeholder {
     font-weight: 600 !important;
 }
 
-.layout-main-section.frappe-card {
+.layout-main-section {
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+}
+
+.widget.shortcut-widget-box:hover .widget-title {
+    color:#0073e6 !important;
+}
+
+.search-bar .awesomplete ul {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+}
+
+.awesomplete > ul > li:hover, .awesomplete > ul > li[aria-selected=true] {
+    background-color: #0073e6 !important;
+    color: #fff !important;
+}
+
+mark, .mark {
+    background-color: #ffcc00 !important;
 }
 /* Add more custom styles as needed */
