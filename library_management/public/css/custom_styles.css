@@ -1,7 +1,9 @@
 /* Example: Override primary button color */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+
 .btn-primary {
-    background-color: #db3434 !important;
-    border-color: #db3434 !important;
+    background-color: #535f69 !important;
+    border-color: #535f69 !important;
 }
 
 /* Example: Override background color of the sidebar */
@@ -19,4 +21,35 @@ body {
     -webkit-font-smoothing: antialiased !important;
 }
 
+.page-container {
+    background-color: #f1f4f7 !important;
+}
+.page-head {
+    background-color: #f1f4f7 !important;
+}
+
+.page-title .title-area .title-text {
+    font-family: "Mark Pro", 'IBM Plex Sans Thai', Helvetica, Arial, sans-serif !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+}
+
+input::placeholder {
+    color: var(--text-muted) !important;
+}
+
+#navbar-breadcrumbs > li:not(:last-child) > a {
+    color: #a1aab5 !important;
+    text-decoration: none !important;
+    transition: color .4s cubic-bezier(.51,.92,.24,1) !important;
+}
+
+#navbar-breadcrumbs > li:last-child > a {
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+.layout-main-section.frappe-card {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+}
 /* Add more custom styles as needed */
