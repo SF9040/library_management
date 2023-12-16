@@ -1,5 +1,7 @@
 /* Example: Override primary button color */
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Sarabun:wght@100;200;300;400;500&display=swap');
+
 .btn-primary {
     background-color: #2a2f45 !important;
     border-color: #2a2f45 !important;
