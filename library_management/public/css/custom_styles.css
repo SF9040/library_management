@@ -229,4 +229,6 @@ mark, .mark {
     font-weight: 500 !important;
 }
 
-
+.form-grid {
+    border-top: none !important;
+}
