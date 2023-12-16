@@ -232,3 +232,25 @@ mark, .mark {
 .form-grid {
     border-top: none !important;
 }
+
+.indicator-pill, .indicator-pill-right {
+    border-radius: 3.5px !important;
+}
+
+.indicator-pill.blue, .indicator-pill-right.blue, .indicator-pill-round.blue {
+    color: rgb(0, 95, 219) !important;
+    background-color: rgba(51, 139, 255, 0.13);
+}
+
+.indicator-pill.red, .indicator-pill-right.red, .indicator-pill-round.red {
+    color: rgb(202, 21, 12) !important;
+    background-color: rgba(231, 29, 19, 0.1) !important;
+}
+
+/* .std-form-layout > .form-layout > .form-page {
+    box-shadow: rgba(25, 59, 103, 0.05) 0px 0px 0px 1px, rgba(28, 55, 90, 0.16) 0px 2px 6px -1px, rgba(28, 50, 79, 0.38) 0px 8px 24px -4px !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)) !important;
+    background-color: rgb(255, 255, 255);
+    color: rgba(24, 39, 57, 0.94) !important;
+    border-top-right-radius: 4px !important;
+} */
