@@ -212,3 +212,16 @@ mark, .mark {
 .grid-heading-row .grid-row:first-child {
     border-bottom: none !important;
 }
+
+.form-message {
+    margin-top: var(--margin-md) !important;
+    margin-top: var(--margin-md) !important;
+}
+
+.form-message.blue {
+    background: rgb(0, 106, 245) !important;
+    color: white !important;
+    box-shadow: rgba(28, 55, 90, 0.16) 0px 3px 18px -2px, rgba(28, 50, 79, 0.38) 0px 12px 48px -6px !important;
+    font-weight: 500 !important;
+}
+
