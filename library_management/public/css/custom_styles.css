@@ -36,6 +36,7 @@ body {
 }
 .page-head {
     background-color: transparent !important;
+    background: transparent !important;
 }
 .page-head.drop-shadow {
     background-color: transparent !important;
@@ -275,3 +276,5 @@ mark, .mark {
     color: rgba(24, 39, 57, 0.94) !important;
     border-top-right-radius: 4px !important;
 } */
+
+/* background-image: radial-gradient(circle at left top, #60a5fa 30%, rgb(255 255 255) 100%); */
