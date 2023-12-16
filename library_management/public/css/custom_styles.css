@@ -78,6 +78,7 @@ input::placeholder {
 }
 
 .search-bar .awesomplete ul {
+    margin-top: 13px !important; 
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
 }
 
@@ -100,4 +101,52 @@ mark, .mark {
     background-clip: padding-box !important;
     box-shadow:  none !important;
 }
+
+.form-tabs-list .form-tabs .nav-item .nav-link {
+    color: rgba(27, 43, 65, 0.69) !important;
+}
+
+.form-tabs-list .form-tabs .nav-item .nav-link.active {
+    color: rgb(0, 95, 219) !important;
+    border-bottom: 1px solid rgb(0, 95, 219) !important;
+}
+
+.form-control {
+    color: rgba(24, 39, 57, 0.94) !important;
+    background-color: rgba(26, 57, 96, 0.1) !important;
+    box-shadow: rgba(28, 48, 74, 0.52) 0px 0px 0px 0px inset !important;
+    border-radius: 4px !important; 
+}
+.form-control:focus {
+    box-shadow: none !important;
+    color: rgba(24, 39, 57, 0.94) !important;
+    box-shadow: rgba(28, 48, 74, 0.52) 0px 0px 0px 0px inset !important;
+}
 /* Add more custom styles as needed */
+
+.control-label {
+    color: rgba(26, 41, 61, 0.796) !important;
+    font-weight: 500 !important; 
+}
+
+.like-disabled-input {
+    color: rgba(28, 52, 84, 0.26) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.head-title, .comment-box .comment-input-header, .form-section .section-head, .form-dashboard-section .section-head {
+    color: rgb(13, 18, 25) !important;
+    font-family: Poppins, ui-sans-serif, "system-ui", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+
+.grid-heading-row {
+    background-color: rgb(255, 255, 255)  !important;
+    background-image: linear-gradient(rgba(51, 139, 255, 0.13), rgba(51, 139, 255, 0.13)) !important;
+    border-top-color: rgba(26, 57, 96, 0.1)  !important;
+    border-top-style: solid  !important;
+    border-top-width: 1px  !important;
+    box-shadow: rgba(51, 139, 255, 0.13) 0px 1px 0px 0px  !important;
+    color: rgba(24, 39, 57, 0.94)  !important;
+    border-bottom: none !important;
+}
