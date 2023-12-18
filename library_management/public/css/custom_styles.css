@@ -280,6 +280,30 @@ mark, .mark {
     display: none;
 }
 
+.desk-alert.red {
+    color: #ca150c !important;
+    background-color: hsla(145, 72%, 31%, 0.1) !important;
+}
+
+.desk-alert.yellow {
+    background: #ffcc00 !important;
+}
+
+.desk-alert.orange {
+    background: #ffcc00 !important;
+
+}
+
+.desk-alert.blue {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.desk-alert.green {
+    color: #158443 !important;
+    background-color: hsla(145, 72%, 31%, 0.1) !important;
+}
+
 /* .page-head {
     background: linear-gradient(45deg, #32a6ff 0%, #3f6fff 49%, #8d54ff 82%);
     background-size: 200%;
