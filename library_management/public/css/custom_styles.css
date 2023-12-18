@@ -309,13 +309,12 @@ mark, .mark {
     border-bottom: 1px solid rgb(224, 233, 244) !important;
     box-shadow: none !important;
     border: 1px solid rgb(224, 233, 244) !important;
-    border-bottom: none !important;
 }
 
 .ql-container.ql-snow {
     border: 1px solid rgb(224, 233, 244) !important;
-    box-shadow: none;
-    border-top: none;
+    box-shadow: none !important;
+    border-top: none !important;
 }
 
 .frappe-control .ql-editor:not(.read-mode) {
