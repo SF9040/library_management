@@ -303,6 +303,24 @@ mark, .mark {
     color: #158443 !important;
     background-color: hsla(145, 72%, 31%, 0.1) !important;
 }
+
+.ql-toolbar.ql-snow {
+    background-color: rgb(245, 248, 253) !important;
+    border-bottom: 1px solid rgb(224, 233, 244) !important;
+    box-shadow: none !important;
+    border: 1px solid rgb(224, 233, 244) !important;
+    border-bottom: none !important;
+}
+
+.ql-container.ql-snow {
+    border: 1px solid rgb(224, 233, 244) !important;
+    box-shadow: none;
+    border-top: none;
+}
+
+.frappe-control .ql-editor:not(.read-mode) {
+    background-color: #fff !important;
+}
 /* .navbar {
     box-shadow: rgba(25, 59, 103, 0.05) 0px 0px 0px 1px, rgba(28, 55, 90, 0.16) 0px 4px 30px -3px, rgba(28, 50, 79, 0.38) 0px 3px 14px -8px !important;
 } */
