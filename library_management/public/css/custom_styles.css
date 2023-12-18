@@ -276,6 +276,10 @@ mark, .mark {
     opacity: 1 !important;
 }
 
+.col-lg-2.layout-side-section {
+    display: none;
+}
+
 /* .page-head {
     background: linear-gradient(45deg, #32a6ff 0%, #3f6fff 49%, #8d54ff 82%);
     background-size: 200%;
