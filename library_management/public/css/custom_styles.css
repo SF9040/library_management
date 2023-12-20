@@ -335,6 +335,68 @@ mark, .mark {
     background-color: #f1f4f7 !important;
 }
 
+[data-route="List/Delivery Note/List"]{
+    .navbar {
+        background-color: #2f89f8 !important;
+    }
+    
+    .navbar-brand.navbar-home {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs > li:not(:last-child) > a {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs a:before {
+      color: #fff !important;  
+    }
+    
+    .navbar #navbar-breadcrumbs > li:last-child > a {
+       color: #fff !important;  
+    }
+}
+
+
+[data-route="List/Sales Invoice/List"]{
+    .navbar {
+        background-color: #fa7474 !important;
+    }
+    
+    .navbar-brand.navbar-home {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs > li:not(:last-child) > a {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs a:before {
+      color: #fff !important;  
+    }
+    
+    .navbar #navbar-breadcrumbs > li:last-child > a {
+       color: #fff !important;  
+    }
+}
+
+[data-route="List/Sales Order/List"]{
+    .navbar {
+        background-color: #986803 !important;
+    }
+    
+    .navbar-brand.navbar-home {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs > li:not(:last-child) > a {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs a:before {
+      color: #fff !important;  
+    }
+    
+    .navbar #navbar-breadcrumbs > li:last-child > a {
+       color: #fff !important;  
+    }
+}
+
+
 /* .page-head {
     background-image: linear-gradient(90deg,rgba(56,189,248,0) 0%,#0EA5E9 32.29%,rgba(236,72,153,0.3) 67.19%,rgba(236,72,153,0) 100%) !important;
 } */
