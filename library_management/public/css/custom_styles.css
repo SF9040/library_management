@@ -336,7 +336,7 @@ mark, .mark {
     background-color: #f1f4f7 !important;
 }
 
-[data-route="List/Delivery Note/List"]{
+[data-route="List/Delivery Note/List"], [data-route^="print/Delivery Note/"]{
     .navbar {
         background-color: #2f89f8 !important;
     }
@@ -357,7 +357,7 @@ mark, .mark {
 }
 
 
-[data-route="List/Sales Invoice/List"]{
+[data-route="List/Sales Invoice/List"], [data-route^="print/Sales Invoice/"]{
     .navbar {
         background-color: #fa7474 !important;
     }
@@ -377,7 +377,7 @@ mark, .mark {
     }
 }
 
-[data-route="List/Sales Order/List"]{
+[data-route="List/Sales Order/List"], [data-route^="print/Sales Order/"]{
     .navbar {
         background-color: #986803 !important;
     }
