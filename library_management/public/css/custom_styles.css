@@ -121,6 +121,7 @@ mark, .mark {
     background-color: rgba(26, 57, 96, 0.1) !important;
     box-shadow: rgba(28, 48, 74, 0.52) 0px 0px 0px 0px inset !important;
     border-radius: 4px !important; 
+    font-weight: 500 !important;
 }
 
 .grid-body .editable-row .form-control {
