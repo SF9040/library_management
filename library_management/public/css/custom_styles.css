@@ -340,7 +340,10 @@ mark, .mark {
     .navbar {
         background-color: #2f89f8 !important;
     }
-    
+    .navbar .form-control {
+        background-color: #fff !important;
+      }
+      
     .navbar-brand.navbar-home {
       color: #fff !important;
     }
@@ -361,7 +364,10 @@ mark, .mark {
     .navbar {
         background-color: #fa7474 !important;
     }
-    
+    .navbar .form-control {
+        background-color: #fff !important;
+      }
+  
     .navbar-brand.navbar-home {
       color: #fff !important;
     }
@@ -390,6 +396,10 @@ mark, .mark {
     }
     .navbar #navbar-breadcrumbs a:before {
       color: #fff !important;  
+    }
+
+    .navbar .form-control {
+      background-color: #fff !important;
     }
     
     .navbar #navbar-breadcrumbs > li:last-child > a {
