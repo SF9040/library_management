@@ -2,6 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Sarabun:wght@100;200;300;400;500&display=swap');
 
+.sidebar-item-container[item-name="Integrations"] {
+    display: none;
+  }
+  .sidebar-item-container[item-name="Support"] {
+      display: none;
+    }
+  .sidebar-item-container[item-name="ERPNext Settings"] {
+      display: none;
+    }
+  
+  .sidebar-item-container[item-name="ERPNext Integrations"] {
+      display: none;
+    }
+  .sidebar-item-container[item-name="Loans"] {
+      display: none;
+    }
+  .sidebar-item-container[item-name="Website"] {
+      display: none;
+    }
+    
 .btn-primary {
     font-weight: 500 !important; 
     background-color: rgb(0 115 230) !important;
