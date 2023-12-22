@@ -21,7 +21,7 @@
   .sidebar-item-container[item-name="Website"] {
       display: none;
     }
-    
+
 .btn-primary {
     font-weight: 500 !important; 
     background-color: rgb(0 115 230) !important;
@@ -319,8 +319,8 @@ mark, .mark {
 }
 
 .desk-alert.green {
-    color: #158443 !important;
-    background-color: hsla(145, 72%, 31%, 0.1) !important;
+    color: #fff !important;
+    background-color: #158443 !important;
 }
 
 .ql-toolbar.ql-snow {
