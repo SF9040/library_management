@@ -44,6 +44,7 @@ body {
     font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important; 
+    background-color: #f1f4f7 !important;
 }
 
 .list-paging-area .btn-group .btn-paging.btn-info {
@@ -54,7 +55,7 @@ body {
 }
 
 .page-container {
-    background-color: #f1f4f7 !important;
+    background-color: unset !important;
 }
 
 .page-head.drop-shadow {
