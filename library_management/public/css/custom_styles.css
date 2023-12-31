@@ -149,7 +149,7 @@ mark, .mark {
     color: rgba(24, 39, 57, 0.94) !important;
     background-color: none !important;
     box-shadow: rgba(28, 48, 74, 0.52) 0px 0px 0px 0px inset !important;
-    border-radius: none !important;
+    border-radius: 0 !important;
 }
 
 .form-control:focus {
