@@ -474,3 +474,7 @@ mark, .mark {
 } */
 
 /* background-image: radial-gradient(circle at left top, #60a5fa 30%, rgb(255 255 255) 100%); */
+
+.page-content .awesomplete > ul {
+    min-width: 550px !important;
+}
