@@ -482,3 +482,14 @@ mark, .mark {
 [data-page-route=Workspaces] .widget.number-widget-box {
     border: 1px solid #d6dadd !important;
 }
+
+.widget.number-widget-box .widget-body .widget-content .number {
+    line-height: 1 !important;
+    font-size: 33px;
+    font-family: 'JetBrains Mono', sans-serif !important;
+}
+
+.widget.number-widget-box .widget-head .widget-title {
+    font-size: larger !important;
+    font-weight: 400 !important;
+}
