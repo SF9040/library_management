@@ -478,3 +478,7 @@ mark, .mark {
 .page-content .awesomplete > ul {
     min-width: 550px !important;
 }
+
+[data-page-route=Workspaces] .widget.number-widget-box {
+    border: 1px solid #d6dadd !important;
+}
