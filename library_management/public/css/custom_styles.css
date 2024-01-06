@@ -499,7 +499,7 @@ mark, .mark {
 
 .widget.number-widget-box .widget-head .widget-title {
     font-size: medium !important;
-    font-weight: 600 !important;
+    /* font-weight: 600 !important; */
     color: #0a2540 !important;
 }
 
