@@ -44,7 +44,7 @@ body {
     font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important; 
-    background-color: #f1f4f7 !important;
+    background-color: #f6f9fc !important;
 }
 
 .list-paging-area .btn-group .btn-paging.btn-info {
@@ -354,7 +354,7 @@ mark, .mark {
 }
 
 .page-head {
-    background-color: #f1f4f7 !important;
+    background-color: #f6f9fc !important;
 }
 
 [data-route="List/Delivery Note/List"], [data-route^="print/Delivery Note/"], [data-route^="Form/Delivery Note/"]{
@@ -480,17 +480,27 @@ mark, .mark {
 }
 
 [data-page-route=Workspaces] .widget.number-widget-box {
-    border: 1px solid #d6dadd !important;
+    border: 1px solid #E8EAF1 !important;
+    box-shadow: none !important;
+    font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+[data-page-route=Workspaces] .layout-main-section {
+    border: 1px solid #E8EAF1 !important;
+    box-shadow: none !important;
 }
 
 .widget.number-widget-box .widget-body .widget-content .number {
     line-height: 1 !important;
     font-size: 33px;
+    font-weight: 500 !important;
+    font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important;
 }
 
 .widget.number-widget-box .widget-head .widget-title {
-    font-size: larger !important;
-    font-weight: 400 !important;
+    font-size: medium !important;
+    font-weight: 600 !important;
+    color: #0a2540 !important;
 }
 
 .list-liked-by-me [title=Likes] {
