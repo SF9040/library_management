@@ -492,3 +492,23 @@ mark, .mark {
     font-size: larger !important;
     font-weight: 400 !important;
 }
+
+.list-liked-by-me [title=Likes] {
+    display: none !important;
+  }
+  
+  .like-action.not-liked {
+    display: none !important;
+  }
+
+  .list-liked-by-me [title=Likes] {
+    display: none !important;
+  }
+  
+  .like-action.not-liked {
+    display: none !important;
+  }
+  
+  .level-item.list-row-activity .comment-count {
+   display: none !important;
+  }
