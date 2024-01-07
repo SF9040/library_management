@@ -481,6 +481,7 @@ mark, .mark {
 
 [data-page-route=Workspaces] .widget.number-widget-box {
     border: 1px solid #E8EAF1 !important;
+    overflow: hidden !important;
     box-shadow: none !important;
     font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important;    
     }
@@ -495,6 +496,9 @@ mark, .mark {
     font-size: 33px;
     font-weight: 300 !important;
     /* font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important; */
+}
+.widget.spacer {
+    background-color: transparent !important;
 }
 
 .widget.number-widget-box .widget-head .widget-title {
