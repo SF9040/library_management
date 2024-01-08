@@ -553,9 +553,9 @@ mark, .mark {
   }
 
   [data-page-route=Workspaces] .layout-main .layout-side-section, [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
-    height: unset !important;
-    overflow: unset !important;
-    scrollbar-color: unset !important;
+    /* height: unset !important; */
+    /* overflow: unset !important; */
+    /* scrollbar-color: unset !important; */
    }
 
    .page-head .page-head-content {
