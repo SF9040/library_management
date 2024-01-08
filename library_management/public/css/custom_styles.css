@@ -551,3 +551,14 @@ mark, .mark {
   .level-item.list-row-activity .comment-count {
    display: none !important;
   }
+
+  [data-page-route=Workspaces] .layout-main .layout-side-section, [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
+    height: unset !important;
+    overflow: unset !important;
+    scrollbar-color: unset !important;
+   }
+
+   .page-head .page-head-content {
+    backdrop-filter: blur(4px) !important;
+    background-color: transparent !important;
+   }
