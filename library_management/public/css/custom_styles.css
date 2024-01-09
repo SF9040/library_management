@@ -560,6 +560,7 @@ mark, .mark {
 
    .page-head .page-head-content {
     backdrop-filter: blur(4px) !important;
+    /* backdrop-filter: blur(12px) saturate(2)!important; */
     background-color: transparent !important;
    }
    .page-head {
