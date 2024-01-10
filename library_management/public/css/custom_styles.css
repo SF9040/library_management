@@ -480,11 +480,36 @@ mark, .mark {
 }
 
 [data-page-route=Workspaces] .widget.number-widget-box {
-    border: 1px solid #E8EAF1 !important;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+    animation-duration: .2s;
+    box-shadow: inset 0 0 0 1px rgba(232, 234, 241, 0.7) !important;
     overflow: hidden !important;
-    box-shadow: none !important;
     font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important;    
     }
+
+[data-page-route=Workspaces] .inner-gradient-spatial {
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+    animation-duration: .2s;
+}
+
+[data-page-route=Workspaces]  .inner-gradient-spatial {
+    transition: transform 5s ease-out;
+    transition-duration: 1.4s !important;
+    animation-duration: 1.4s !important;
+  }
+  
+[data-page-route=Workspaces] .number-widget-box:hover .inner-gradient-spatial {
+    transform: translate(-90%, -1%) scale(1.2);
+  }
+  
+
+[data-page-route=Workspaces] .widget.number-widget-box:hover {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;   
+}
 
 [data-page-route=Workspaces] .layout-main-section {
     border: 1px solid #E8EAF1 !important;
@@ -526,3 +551,18 @@ mark, .mark {
   .level-item.list-row-activity .comment-count {
    display: none !important;
   }
+
+  [data-page-route=Workspaces] .layout-main .layout-side-section, [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
+    /* height: unset !important; */
+    /* overflow: unset !important; */
+    /* scrollbar-color: unset !important; */
+   }
+
+   .page-head .page-head-content {
+    backdrop-filter: blur(4px) !important;
+    /* backdrop-filter: blur(12px) saturate(2)!important; */
+    background-color: transparent !important;
+   }
+   .page-head {
+    background-color: transparent !important;
+   }
