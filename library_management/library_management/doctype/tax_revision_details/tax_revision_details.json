@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-10 16:30:59.236923",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "price_of_usd",
+  "f_value",
+  "increase_price",
+  "exchange_rate",
+  "value_baht",
+  "price_of_baht",
+  "inbound_rate",
+  "import_duties_payable",
+  "vat_base",
+  "vat_percent",
+  "vat"
+ ],
+ "fields": [
+  {
+   "fieldname": "price_of_usd",
+   "fieldtype": "Currency",
+   "label": "Price Of USD"
+  },
+  {
+   "fieldname": "f_value",
+   "fieldtype": "Currency",
+   "label": "F Value"
+  },
+  {
+   "fieldname": "increase_price",
+   "fieldtype": "Currency",
+   "label": "Increase Price"
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Currency",
+   "label": "Exchange Rate"
+  },
+  {
+   "fieldname": "value_baht",
+   "fieldtype": "Currency",
+   "label": "Value Baht"
+  },
+  {
+   "fieldname": "price_of_baht",
+   "fieldtype": "Percent",
+   "label": "Price Of Baht"
+  },
+  {
+   "fieldname": "inbound_rate",
+   "fieldtype": "Currency",
+   "label": "Inbound Rate"
+  },
+  {
+   "fieldname": "import_duties_payable",
+   "fieldtype": "Currency",
+   "label": "Import Duties Payable"
+  },
+  {
+   "fieldname": "vat_base",
+   "fieldtype": "Currency",
+   "label": "VAT Base"
+  },
+  {
+   "fieldname": "vat_percent",
+   "fieldtype": "Percent",
+   "label": "VAT Percent"
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Currency",
+   "label": "VAT"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-10 16:30:59.236923",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Tax Revision Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
