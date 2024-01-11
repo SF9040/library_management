@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "T-R-####",
+ "creation": "2024-01-10 15:24:29.531663",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date",
+  "to_date",
+  "notes",
+  "amended_from",
+  "tax_revision_details_section",
+  "tax_revision_details",
+  "import_duty",
+  "vat",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tax Revision",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "tax_revision_details_section",
+   "fieldtype": "Section Break",
+   "label": "Tax Revision Details"
+  },
+  {
+   "fieldname": "import_duty",
+   "fieldtype": "Currency",
+   "label": "Import Duty"
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Currency",
+   "label": "VAT"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "tax_revision_details",
+   "fieldtype": "Table",
+   "label": "Tax Revision Details",
+   "options": "Tax Revision Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-10 16:32:13.518799",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Tax Revision",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
