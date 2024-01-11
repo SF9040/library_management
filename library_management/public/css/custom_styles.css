@@ -570,3 +570,7 @@ mark, .mark {
    #freeze .freeze-message-container {
         background-color: transparent !important;
    }
+
+   .desk-alert .alert-message-container .alert-message {
+        color: #fff !important;
+   }
