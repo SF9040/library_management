@@ -44,7 +44,7 @@ body {
     font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important; 
-    background-color: #f6f9fc !important;
+    background-color: #fff !important;
 }
 
 .list-paging-area .btn-group .btn-paging.btn-info {
@@ -356,6 +356,15 @@ mark, .mark {
 .page-head {
     background-color: #f6f9fc !important;
 }
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(5px) !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px !important;
+}
+
+.navbar .navbar-brand {
+        color: #1A1F23 !important;
+    }
 
 [data-route="List/Delivery Note/List"], [data-route^="print/Delivery Note/"], [data-route^="Form/Delivery Note/"]{
     .navbar {
