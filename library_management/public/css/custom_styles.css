@@ -594,3 +594,7 @@ mark, .mark {
     font-size: 18px !important;
     color: #0E243C !important;
    }
+
+   .standard-sidebar .standard-sidebar-item a, .desk-sidebar .standard-sidebar-item a, .search-dialog .search-results .search-sidebar .standard-sidebar-item a {
+    color: #0E243C !important;
+   }
