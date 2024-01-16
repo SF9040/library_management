@@ -363,7 +363,7 @@ mark, .mark {
 }
 
 .navbar .navbar-brand {
-        color: #1A1F23 !important;
+        color: #0E243C !important;
     }
 
 [data-route="List/Delivery Note/List"], [data-route^="print/Delivery Note/"], [data-route^="Form/Delivery Note/"]{
@@ -538,7 +538,7 @@ mark, .mark {
 .widget.number-widget-box .widget-head .widget-title {
     font-size: medium !important;
     /* font-weight: 600 !important; */
-    color: #0a2540 !important;
+    color: #0E243C !important;
 }
 
 .list-liked-by-me [title=Likes] {
