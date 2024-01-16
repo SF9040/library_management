@@ -276,8 +276,8 @@ mark, .mark {
 }
 
 .indicator-pill.red, .indicator-pill-right.red, .indicator-pill-round.red {
-    color: rgb(202, 21, 12) !important;
-    background-color: rgba(231, 29, 19, 0.1) !important;
+    color: #fff !important;
+    background-color: rgb(202, 21, 12)  !important;
 }
 
 .frappe-list .level-item {
