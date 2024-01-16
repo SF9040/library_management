@@ -368,7 +368,7 @@ mark, .mark {
 
 [data-route="List/Delivery Note/List"], [data-route^="print/Delivery Note/"], [data-route^="Form/Delivery Note/"]{
     .navbar {
-        background-color: #2f89f8 !important;
+        background-color: rgb(47 137 248 / 77%) !important;
         transition: background-color 0.3s ease; /* Property, Duration, Timing Function */
 
     }
@@ -394,7 +394,7 @@ mark, .mark {
 
 [data-route="List/Sales Invoice/List"], [data-route^="print/Sales Invoice/"], [data-route^="Form/Sales Invoice/"]{
     .navbar {
-        background-color: #fa7474 !important; 
+        background-color: rgb(250 116 116 / 77%) !important; 
         transition: background-color 0.3s ease; /* Property, Duration, Timing Function */
 
     }
@@ -419,7 +419,7 @@ mark, .mark {
 
 [data-route="List/Sales Order/List"], [data-route^="print/Sales Order/"], [data-route^="Form/Sales Order/"]{
     .navbar {
-        background-color: #986803 !important;
+        background-color: rgb(152 104 3 / 77%) !important;
         transition: background-color 0.3s ease; /* Property, Duration, Timing Function */
     }
     
