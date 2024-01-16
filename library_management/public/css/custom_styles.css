@@ -521,7 +521,7 @@ mark, .mark {
 }
 
 [data-page-route=Workspaces] .layout-main-section {
-    border: 1px solid #E8EAF1 !important;
+    border: none !important;
     box-shadow: none !important;
 }
 
@@ -586,4 +586,10 @@ mark, .mark {
 
    .desk-alert .close .icon {
     color: #fff !important;
+   }
+
+   [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .ce-header {
+    font-family: 'Montserrat-SemiBold' !important;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
    }
