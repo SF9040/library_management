@@ -589,7 +589,7 @@ mark, .mark {
    }
 
    [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .ce-header {
-    font-family: 'Montserrat-SemiBold' !important;
+    font-family: 'GothamBold' !important;
     text-transform: uppercase !important;
     font-size: 18px !important;
     color: #0E243C !important;
