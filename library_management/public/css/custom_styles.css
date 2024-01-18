@@ -519,8 +519,8 @@ mark, .mark {
   
 
 [data-page-route=Workspaces] .widget.number-widget-box:hover {
-    /* box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;    */
-    box-shadow: rgba(25, 59, 103, 0.05) 0px 0px 0px 1px, rgba(28, 55, 90, 0.16) 0px 4px 24px -3px, rgba(28, 50, 79, 0.38) 0px 18px 64px -8px !important;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;   
+    /* box-shadow: rgba(25, 59, 103, 0.05) 0px 0px 0px 1px, rgba(28, 55, 90, 0.16) 0px 4px 24px -3px, rgba(28, 50, 79, 0.38) 0px 18px 64px -8px !important; */
 }
 
 [data-page-route=Workspaces] .layout-main-section {
