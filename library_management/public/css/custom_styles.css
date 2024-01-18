@@ -524,6 +524,7 @@ mark, .mark {
     line-height: 1 !important;
     font-size: 33px;
     font-weight: 300 !important;
+    font-family: 'RMNeueTRIAL-Light' !important;
     /* font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important; */
 }
 .widget.spacer {
