@@ -601,3 +601,8 @@ mark, .mark {
         color: #0E243C;
         font-family: 'GothamBold';
    }
+
+.form-links .form-link-title {
+    font-weight: 500;
+    font-family: 'RMNeueTRIAL-Regular';
+}
