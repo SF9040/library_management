@@ -610,3 +610,22 @@ mark, .mark {
     font-weight: 500 !important;
     font-family: 'RMNeueTRIAL-Regular' !important;
 }
+
+.modal-dialog {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;
+}
+
+.modal .modal-header {
+    border-bottom: none !important;
+    border-top-right-radius: 16px !important;
+    border-top-left-radius: 16px !important;
+}
+
+.modal .modal-footer {
+    border-top: none !important;
+    border-bottom-right-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+}
+.modal-content {
+    box-shadow: none !important;
+}
