@@ -128,6 +128,11 @@ mark, .mark {
     box-shadow:  none !important;
 }
 
+.form-tabs-list {
+    backdrop-filter: blur(5px) !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
 .form-tabs-list .form-tabs .nav-item .nav-link {
     color: rgba(27, 43, 65, 0.69) !important;
 }
@@ -565,9 +570,8 @@ mark, .mark {
    }
 
    .page-head .page-head-content {
-        backdrop-filter: blur(4px) !important;
-        /* backdrop-filter: blur(12px) saturate(2)!important; */
-        background-color: transparent !important;
+        backdrop-filter: blur(5px) !important;
+        background-color: rgba(255, 255, 255, 0.8) !important;
    }
    .page-head {
         background-color: transparent !important;
