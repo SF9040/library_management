@@ -603,6 +603,6 @@ mark, .mark {
    }
 
 .form-links .form-link-title {
-    font-weight: 500;
-    font-family: 'RMNeueTRIAL-Regular';
+    font-weight: 500 !important;
+    font-family: 'RMNeueTRIAL-Regular' !important;
 }
