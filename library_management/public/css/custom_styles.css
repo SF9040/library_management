@@ -1,0 +1,635 @@
+/* Example: Override primary button color */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Sarabun:wght@100;200;300;400;500&display=swap');
+
+.sidebar-item-container[item-name="Integrations"] {
+    display: none;
+  }
+  .sidebar-item-container[item-name="Support"] {
+      display: none;
+    }
+  .sidebar-item-container[item-name="ERPNext Settings"] {
+      display: none;
+    }
+  
+  .sidebar-item-container[item-name="ERPNext Integrations"] {
+      display: none;
+    }
+  .sidebar-item-container[item-name="Loans"] {
+      display: none;
+    }
+  .sidebar-item-container[item-name="Website"] {
+      display: none;
+    }
+
+.btn-primary {
+    font-weight: 500 !important; 
+    background-color: rgb(0 115 230) !important;
+    color: rgb(255 255 255);
+    border: none !important;
+    box-shadow: none;
+}
+
+/* Example: Override background color of the sidebar */
+.sidebar {
+    background-color: #2c3e50 !important;
+}
+
+.search-bar {
+    max-width: unset !important;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto", "Sarabun", "Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif !important;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important; 
+    background-color: #fff !important;
+}
+
+.list-paging-area .btn-group .btn-paging.btn-info {
+    background-color: #0073e6 !important;
+    border-color: #0073e6 !important; 
+    box-shadow: none !important;
+    outline: 1px solid #0073e6 !important;
+}
+
+.page-container {
+    background-color: unset !important;
+}
+
+.page-head.drop-shadow {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.page-title .title-area .title-text {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto", "Sarabun", "Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif !important;
+    font-weight: 700 !important;
+    color: #1a1a1a !important; 
+}
+
+.page-title .sidebar-toggle-btn .icon.sidebar-toggle-placeholder {
+    stroke: #000 !important;
+    fill: #000 !important;
+}
+
+input::placeholder {
+    color: var(--text-muted) !important;
+}
+::-ms-input-placeholder { /* Edge 12-18 */
+    color: var(--text-muted) !important;
+  }
+  
+::placeholder {
+    color: var(--text-muted) !important;
+  }
+
+#navbar-breadcrumbs > li:not(:last-child) > a {
+    color: #a1aab5 !important;
+    text-decoration: none !important;
+    transition: color .4s cubic-bezier(.51,.92,.24,1) !important;
+}
+
+#navbar-breadcrumbs > li:last-child > a {
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+/* .layout-main-section {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+} */
+
+.widget.shortcut-widget-box:hover .widget-title {
+    color:#0073e6 !important;
+}
+
+.search-bar .awesomplete ul {
+    margin-top: 13px !important; 
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+}
+
+.awesomplete > ul > li:hover, .awesomplete > ul > li[aria-selected=true] {
+    background-color: #0073e6 !important;
+    color: #fff !important;
+}
+
+mark, .mark {
+    background-color: #ffcc00 !important;
+}
+
+.search-bar .awesomplete input {
+    border-radius: 16.5px !important;
+}
+
+.search-bar .awesomplete input:focus {
+    border-radius: 16.5px !important;
+    background-color: var(--control-bg) !important;
+    background-clip: padding-box !important;
+    box-shadow:  none !important;
+}
+
+.form-tabs-list {
+    backdrop-filter: blur(5px) !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.form-tabs-list .form-tabs .nav-item .nav-link {
+    color: rgba(27, 43, 65, 0.69) !important;
+}
+
+.form-tabs-list .form-tabs .nav-item .nav-link.active {
+    color: rgb(0, 95, 219) !important;
+    border-bottom: 1px solid rgb(0, 95, 219) !important;
+}
+
+.form-control {
+    color: rgba(24, 39, 57, 0.94) !important;
+    background-color: rgba(26, 57, 96, 0.1) !important;
+    box-shadow: rgba(28, 48, 74, 0.52) 0px 0px 0px 0px inset !important;
+    border-radius: 4px !important; 
+    font-weight: 500 !important;
+}
+
+.grid-body .editable-row .form-control {
+    color: rgba(24, 39, 57, 0.94) !important;
+    background-color: none !important;
+    box-shadow: rgba(28, 48, 74, 0.52) 0px 0px 0px 0px inset !important;
+    border-radius: 0 !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    color: rgba(24, 39, 57, 0.94) !important;
+    box-shadow: rgba(28, 48, 74, 0.52) 0px 0px 0px 0px inset !important;
+}
+/* Add more custom styles as needed */
+
+.control-label {
+    color: rgba(26, 41, 61, 0.796) !important;
+    font-weight: 500 !important; 
+    font-size: var(--text-md) !important;
+}
+
+.like-disabled-input {
+    color: rgba(28, 52, 84, 0.76) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.head-title, .comment-box .comment-input-header, .form-section .section-head, .form-dashboard-section .section-head {
+    color: rgb(13, 18, 25) !important;
+    font-family: RMNeueTRIAL-Light, ui-sans-serif, "system-ui", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    text-transform: uppercase !important;
+}
+
+
+.grid-heading-row {
+    background-color: rgb(255, 255, 255)  !important;
+    background-image: linear-gradient(rgba(51, 139, 255, 0.13), rgba(51, 139, 255, 0.13)) !important;
+    border-top-color: rgba(26, 57, 96, 0.1)  !important;
+    border-top-style: solid  !important;
+    border-top-width: 1px  !important;
+    box-shadow: rgba(51, 139, 255, 0.13) 0px 1px 0px 0px  !important;
+    color: rgba(24, 39, 57, 0.94)  !important;
+    border-bottom: none !important;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Light"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Semilight"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Bold"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Semibold"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+    font-weight: 700;
+}
+
+.form-grid {
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-top: none !important;
+}
+
+.grid-heading-row .grid-row:first-child {
+    border-bottom: none !important;
+}
+
+.grid-heading-row .grid-row > .row .col, .form-section .grid-row > .section-body .col, .form-dashboard-section .grid-row > .section-body .col, .grid-row > .dialog-assignment-row .col {
+    border-right: none !important;
+}
+
+.form-message {
+    margin-top: var(--margin-md) !important;
+    margin-top: var(--margin-md) !important;
+}
+
+.form-message.blue {
+    background: rgb(0, 106, 245) !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.form-grid {
+    border-top: none !important;
+}
+
+.indicator-pill, .indicator-pill-right {
+    border-radius: 3.5px !important;
+}
+
+.indicator-pill.blue, .indicator-pill-right.blue, .indicator-pill-round.blue {
+    color: rgb(0, 95, 219) !important;
+    background-color: rgba(51, 139, 255, 0.13);
+}
+
+.frappe-list .level-item {
+    font-weight: 500 !important; 
+}
+
+.form-grid .data-row.highlight {
+    background-color: #ffcc00 !important;
+    box-shadow: none !important;
+}
+
+
+.layout-side-section div.close-sidebar {
+    background: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(28, 55, 90, 0.16) !important;
+    opacity: 1 !important;
+}
+
+.col-lg-2.layout-side-section {
+    display: none;
+}
+
+.desk-alert.red {
+    color: #ca150c !important;
+    background-color: hsla(145, 72%, 31%, 0.1) !important;
+}
+
+.desk-alert.yellow {
+    background: #ffcc00 !important;
+}
+
+.desk-alert.orange {
+    background: #ffcc00 !important;
+
+}
+
+.desk-alert.blue {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.desk-alert.green {
+    color: #fff !important;
+    background-color: #158443 !important;
+}
+
+.ql-toolbar.ql-snow {
+    background-color: rgb(245, 248, 253) !important;
+    border-bottom: 1px solid rgb(224, 233, 244) !important;
+    box-shadow: none !important;
+    border: 1px solid rgb(224, 233, 244) !important;
+}
+
+.ql-container.ql-snow {
+    border: 1px solid rgb(224, 233, 244) !important;
+    box-shadow: none !important;
+    border-top: none !important;
+}
+
+.frappe-control .ql-editor:not(.read-mode) {
+    background-color: #fff !important;
+}
+
+.modal-backdrop {
+    background-color: rgba(28, 55, 90, 0.16) !important;
+}
+
+.modal-backdrop.show {
+    opacity: 1 !important;
+}
+
+.modal-content {
+    border: none !important;
+}
+
+.page-head {
+    background-color: #f6f9fc !important;
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(5px) !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px 0px !important;
+}
+
+.navbar .navbar-brand {
+        color: #0E243C !important;
+    }
+
+[data-route="List/Delivery Note/List"], [data-route^="print/Delivery Note/"], [data-route^="Form/Delivery Note/"]{
+    .navbar {
+        background-color: rgb(47 137 248 / 77%) !important;
+        transition: background-color 0.3s ease; /* Property, Duration, Timing Function */
+
+    }
+    .navbar .form-control {
+        background-color: #fff !important;
+      }
+      
+    .navbar-brand.navbar-home {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs > li:not(:last-child) > a {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs a:before {
+      color: #fff !important;  
+    }
+    
+    .navbar #navbar-breadcrumbs > li:last-child > a {
+       color: #fff !important;  
+    }
+}
+
+
+[data-route="List/Sales Invoice/List"], [data-route^="print/Sales Invoice/"], [data-route^="Form/Sales Invoice/"]{
+    .navbar {
+        background-color: rgb(250 116 116 / 77%) !important; 
+        transition: background-color 0.3s ease; /* Property, Duration, Timing Function */
+
+    }
+    .navbar .form-control {
+        background-color: #fff !important;
+      }
+  
+    .navbar-brand.navbar-home {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs > li:not(:last-child) > a {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs a:before {
+      color: #fff !important;  
+    }
+    
+    .navbar #navbar-breadcrumbs > li:last-child > a {
+       color: #fff !important;  
+    }
+}
+
+[data-route="List/Sales Order/List"], [data-route^="print/Sales Order/"], [data-route^="Form/Sales Order/"]{
+    .navbar {
+        background-color: rgb(152 104 3 / 77%) !important;
+        transition: background-color 0.3s ease; /* Property, Duration, Timing Function */
+    }
+    
+    .navbar-brand.navbar-home {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs > li:not(:last-child) > a {
+      color: #fff !important;
+    }
+    .navbar #navbar-breadcrumbs a:before {
+      color: #fff !important;  
+    }
+
+    .navbar .form-control {
+      background-color: #fff !important;
+    }
+    
+    .navbar #navbar-breadcrumbs > li:last-child > a {
+       color: #fff !important;  
+    }
+}
+
+
+/* .page-head {
+    background-image: linear-gradient(90deg,rgba(56,189,248,0) 0%,#0EA5E9 32.29%,rgba(236,72,153,0.3) 67.19%,rgba(236,72,153,0) 100%) !important;
+} */
+
+/* .navbar {
+    box-shadow: rgba(25, 59, 103, 0.05) 0px 0px 0px 1px, rgba(28, 55, 90, 0.16) 0px 4px 30px -3px, rgba(28, 50, 79, 0.38) 0px 3px 14px -8px !important;
+} */
+/* .page-head {
+    background: linear-gradient(45deg, #32a6ff 0%, #3f6fff 49%, #8d54ff 82%);
+    background-size: 200%;
+    animation: aurora 10s infinite;
+}
+
+@keyframes aurora {
+    0% {
+        background-position: left top;
+    }
+    25% {
+        background-position: right top;
+    }
+    50% {
+        background-position: right bottom;
+    }
+    75% {
+        background-position: left bottom;
+    }
+    100% {
+        background-position: left top;
+    }
+} */
+
+/* .std-form-layout > .form-layout > .form-page {
+    box-shadow: rgba(25, 59, 103, 0.05) 0px 0px 0px 1px, rgba(28, 55, 90, 0.16) 0px 2px 6px -1px, rgba(28, 50, 79, 0.38) 0px 8px 24px -4px !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)) !important;
+    background-color: rgb(255, 255, 255);
+    color: rgba(24, 39, 57, 0.94) !important;
+    border-top-right-radius: 4px !important;
+} */
+
+/* background-image: radial-gradient(circle at left top, #60a5fa 30%, rgb(255 255 255) 100%); */
+
+.page-content .awesomplete > ul {
+    min-width: 550px !important;
+}
+
+[data-page-route=Workspaces] .widget.number-widget-box {
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+    animation-duration: .2s;
+    box-shadow: inset 0 0 0 1px rgba(232, 234, 241, 0.7) !important;
+    overflow: hidden !important;
+    font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important;
+    border-radius: 16px !important;
+    }
+
+[data-page-route=Workspaces] .inner-gradient-spatial {
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+    animation-duration: .2s;
+}
+
+[data-page-route=Workspaces]  .inner-gradient-spatial {
+    transition: transform 5s ease-out;
+    transition-duration: 1.4s !important;
+    animation-duration: 1.4s !important;
+  }
+  
+[data-page-route=Workspaces] .number-widget-box:hover .inner-gradient-spatial {
+    transform: translate(-90%, -1%) scale(1.2);
+  }
+  
+
+[data-page-route=Workspaces] .widget.number-widget-box:hover {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;   
+    /* box-shadow: rgba(25, 59, 103, 0.05) 0px 0px 0px 1px, rgba(28, 55, 90, 0.16) 0px 4px 24px -3px, rgba(28, 50, 79, 0.38) 0px 18px 64px -8px !important; */
+}
+
+[data-page-route=Workspaces] .layout-main-section {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.widget.number-widget-box .widget-body .widget-content .number {
+    line-height: 1 !important;
+    font-size: 33px;
+    font-weight: 300 !important;
+    font-family: 'RMNeueTRIAL-Light' !important;
+    /* font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important; */
+}
+.widget.spacer {
+    background-color: transparent !important;
+}
+
+.widget.number-widget-box .widget-head .widget-title {
+    font-size: medium !important;
+    /* font-weight: 600 !important; */
+    color: #0E243C !important;
+}
+
+.list-liked-by-me [title=Likes] {
+    display: none !important;
+  }
+  
+  .like-action.not-liked {
+    display: none !important;
+  }
+
+  .list-liked-by-me [title=Likes] {
+    display: none !important;
+  }
+  
+  .like-action.not-liked {
+    display: none !important;
+  }
+  
+  .level-item.list-row-activity .comment-count {
+   display: none !important;
+  }
+
+  [data-page-route=Workspaces] .layout-main .layout-side-section, [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
+    height: unset !important;
+    overflow: unset !important;
+    /* scrollbar-color: unset !important; */
+   }
+
+   .page-head .page-head-content {
+        backdrop-filter: blur(5px) !important;
+        background-color: rgba(255, 255, 255, 0.8) !important;
+   }
+   .page-head {
+        background-color: transparent !important;
+   }
+
+   #freeze .freeze-message-container {
+        background-color: transparent !important;
+   }
+
+   .desk-alert .alert-message-container .alert-message {
+        color: #fff !important;
+   }
+
+   .desk-alert .close .icon {
+    color: #fff !important;
+   }
+
+   [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .ce-header {
+    font-family: 'GothamBold' !important;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    color: #0E243C !important;
+   }
+
+   .standard-sidebar .standard-sidebar-item a, .desk-sidebar .standard-sidebar-item a, .search-dialog .search-results .search-sidebar .standard-sidebar-item a {
+    color: #0E243C !important;
+   }
+   .workspace-header {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #0E243C;
+        font-family: 'GothamBold';
+   }
+
+.form-links .form-link-title {
+    font-weight: 500 !important;
+    font-family: 'RMNeueTRIAL-Regular' !important;
+}
+
+.modal-dialog {
+    /* box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important; */
+    box-shadow: rgba(25, 59, 103, 0.05) 0px 0px 0px 1px, rgba(28, 55, 90, 0.16) 0px 4px 24px -3px, rgba(28, 50, 79, 0.38) 0px 18px 64px -8px !important;
+    border-radius: 16px !important;
+}
+
+.modal .modal-header {
+    border-bottom: none !important;
+    border-top-right-radius: 16px !important;
+    border-top-left-radius: 16px !important;
+}
+
+.modal .modal-footer {
+    border-top: none !important;
+    border-bottom-right-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+}
+.modal-content {
+    box-shadow: none !important;
+}

@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-09 15:52:01.542044",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "travel_from",
+  "travel_to",
+  "mode_of_travel",
+  "departure_datetime"
+ ],
+ "fields": [
+  {
+   "fieldname": "travel_from",
+   "fieldtype": "Data",
+   "label": "Travel From"
+  },
+  {
+   "fieldname": "travel_to",
+   "fieldtype": "Data",
+   "label": "Travel To"
+  },
+  {
+   "fieldname": "mode_of_travel",
+   "fieldtype": "Select",
+   "label": "Mode Of Travel",
+   "options": "Flight\nTruck\nOther"
+  },
+  {
+   "fieldname": "departure_datetime",
+   "fieldtype": "Datetime",
+   "label": "Departure DateTime"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-09 15:52:01.542044",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Travel Itinerary",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
