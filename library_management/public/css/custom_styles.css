@@ -517,7 +517,7 @@ mark, .mark {
     background-image: conic-gradient(from 180deg at 50% 50%, #000, #000, rgba(191, 219, 254, 0));
     filter: blur(40px);
     content: "";
-    height: 60px;
+    height: 20px;
     width: 250px;
     right: 0;
     top:120px;
