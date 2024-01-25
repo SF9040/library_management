@@ -521,7 +521,6 @@ mark, .mark {
     width: 250px;
     right: 0;
     top:120px;
-    transform: matrix(1, 0, 0, 1, 80, 0);
     position: absolute;
     opacity: 0.4;
   }
