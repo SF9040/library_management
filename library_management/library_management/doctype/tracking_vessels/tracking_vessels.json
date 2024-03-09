@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-18 15:27:02.163715",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vessel_name",
+  "vessel_imo",
+  "vessel_call_sign",
+  "vessel_mmsi",
+  "vessel_flag"
+ ],
+ "fields": [
+  {
+   "fieldname": "vessel_name",
+   "fieldtype": "Data",
+   "label": "Vessel Name"
+  },
+  {
+   "fieldname": "vessel_imo",
+   "fieldtype": "Data",
+   "label": "Vessel IMO"
+  },
+  {
+   "fieldname": "vessel_call_sign",
+   "fieldtype": "Data",
+   "label": "Vessel Call Sign"
+  },
+  {
+   "fieldname": "vessel_mmsi",
+   "fieldtype": "Data",
+   "label": "Vessel MMSI"
+  },
+  {
+   "fieldname": "vessel_flag",
+   "fieldtype": "Data",
+   "label": "Vessel Flag"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-19 04:44:58.796752",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Tracking Vessels",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

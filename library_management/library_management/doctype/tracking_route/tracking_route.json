@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-18 15:23:57.719985",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "route_type",
+  "route_location",
+  "route_state",
+  "route_country",
+  "route_country_code",
+  "route_locode",
+  "route_latitude",
+  "route_longitude",
+  "route_timezone",
+  "route_date",
+  "route_actual"
+ ],
+ "fields": [
+  {
+   "fieldname": "route_type",
+   "fieldtype": "Data",
+   "label": "Route Type"
+  },
+  {
+   "fieldname": "route_location",
+   "fieldtype": "Data",
+   "label": "Route Location"
+  },
+  {
+   "fieldname": "route_state",
+   "fieldtype": "Data",
+   "label": "Route State"
+  },
+  {
+   "fieldname": "route_country",
+   "fieldtype": "Data",
+   "label": "Route Country"
+  },
+  {
+   "fieldname": "route_country_code",
+   "fieldtype": "Data",
+   "label": "Route Country Code"
+  },
+  {
+   "fieldname": "route_locode",
+   "fieldtype": "Data",
+   "label": "Route Locode"
+  },
+  {
+   "fieldname": "route_latitude",
+   "fieldtype": "Data",
+   "label": "Route Latitude"
+  },
+  {
+   "fieldname": "route_longitude",
+   "fieldtype": "Data",
+   "label": "Route Longitude"
+  },
+  {
+   "fieldname": "route_timezone",
+   "fieldtype": "Data",
+   "label": "Route Timezone"
+  },
+  {
+   "fieldname": "route_date",
+   "fieldtype": "Data",
+   "label": "Route Date"
+  },
+  {
+   "fieldname": "route_actual",
+   "fieldtype": "Data",
+   "label": "Route Actual"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-19 04:23:55.097388",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Tracking Route",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

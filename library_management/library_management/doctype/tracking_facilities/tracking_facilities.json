@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-18 15:41:07.032095",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "facility_container_number",
+  "facility_name",
+  "facility_smdg_code",
+  "facility_country_code",
+  "facility_lo_code",
+  "facility_bic_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "facility_name",
+   "fieldtype": "Data",
+   "label": "Facility Name"
+  },
+  {
+   "fieldname": "facility_container_number",
+   "fieldtype": "Data",
+   "label": "Facility Container Number"
+  },
+  {
+   "fieldname": "facility_smdg_code",
+   "fieldtype": "Data",
+   "label": "Facility SMDG Code"
+  },
+  {
+   "fieldname": "facility_country_code",
+   "fieldtype": "Data",
+   "label": "Facility Country Code"
+  },
+  {
+   "fieldname": "facility_lo_code",
+   "fieldtype": "Data",
+   "label": "Facility Lo Code"
+  },
+  {
+   "fieldname": "facility_bic_code",
+   "fieldtype": "Data",
+   "label": "Facility Bic Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-19 15:43:21.302640",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Tracking Facilities",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
