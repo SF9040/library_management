@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-12 16:12:07.562951",
+ "default_view": "List",
+ "description": "MANDATORY : Shipment ID (one from the 3 possibilities)\n- Container number (seven numbers and four letters used for identifying containers internationally)\n- Booking number (usually consist of two letters and six digits)\n- Bill of Lading number (ten-digit number that's assigned by the carrier to identify the bill of lading) ",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "get_shipment_detail_tab",
+  "required_informations_column",
+  "shipment_id",
+  "container_number",
+  "booking_number",
+  "bill_of_lading_number",
+  "get_shipment_details",
+  "optional_informations_column",
+  "sealine_code",
+  "shipment_type",
+  "route",
+  "ais_ais_data",
+  "amended_from",
+  "metadata_section",
+  "shipping_metadata",
+  "locations_infos_section",
+  "locations",
+  "live_map_section",
+  "tracking_map"
+ ],
+ "fields": [
+  {
+   "fieldname": "get_shipment_detail_tab",
+   "fieldtype": "Tab Break",
+   "label": "Get Shipment Detail"
+  },
+  {
+   "fieldname": "required_informations_column",
+   "fieldtype": "Column Break",
+   "label": "Required informations "
+  },
+  {
+   "fieldname": "shipment_id",
+   "fieldtype": "Data",
+   "label": "Shipment Number"
+  },
+  {
+   "fieldname": "container_number",
+   "fieldtype": "Data",
+   "label": "Container number"
+  },
+  {
+   "fieldname": "booking_number",
+   "fieldtype": "Data",
+   "label": "Booking number"
+  },
+  {
+   "fieldname": "bill_of_lading_number",
+   "fieldtype": "Data",
+   "label": "Bill of Lading number"
+  },
+  {
+   "fieldname": "optional_informations_column",
+   "fieldtype": "Column Break",
+   "label": "Optional informations"
+  },
+  {
+   "fieldname": "sealine_code",
+   "fieldtype": "Data",
+   "label": "Sealine code"
+  },
+  {
+   "fieldname": "shipment_type",
+   "fieldtype": "Select",
+   "label": "Shipment type",
+   "options": "BL\nCT\nBK"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Select",
+   "label": "Route",
+   "options": "False\nTrue"
+  },
+  {
+   "fieldname": "ais_ais_data",
+   "fieldtype": "Select",
+   "label": "AIS (Data)",
+   "options": "False\nTrue"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Shipment Tracking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "get_shipment_details",
+   "fieldtype": "Button",
+   "label": "Get Shipment Details"
+  },
+  {
+   "fieldname": "metadata_section",
+   "fieldtype": "Section Break",
+   "label": "Metadata"
+  },
+  {
+   "fieldname": "shipping_metadata",
+   "fieldtype": "Table",
+   "label": "Shipping MetaData",
+   "options": "Tracking Metadata"
+  },
+  {
+   "fieldname": "locations_infos_section",
+   "fieldtype": "Section Break",
+   "label": "Locations Infos"
+  },
+  {
+   "fieldname": "locations",
+   "fieldtype": "Table",
+   "label": "Shipping Locations",
+   "options": "Tracking Locations"
+  },
+  {
+   "fieldname": "live_map_section",
+   "fieldtype": "Section Break",
+   "label": "Live Map"
+  },
+  {
+   "fieldname": "tracking_map",
+   "fieldtype": "Geolocation",
+   "label": "Tracking Map"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-21 10:52:14.849940",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Shipment Tracking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

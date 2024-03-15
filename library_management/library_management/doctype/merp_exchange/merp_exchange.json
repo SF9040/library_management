@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-25 15:49:02.315743",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_informations_tab",
+  "company_vat_code",
+  "check_vat",
+  "column_break_h6yeo",
+  "validation",
+  "vat_number",
+  "name1",
+  "address",
+  "country_code",
+  "latest_exchange_rates_tab",
+  "base_currency",
+  "get_latest_rates",
+  "date",
+  "rates",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_informations_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Informations"
+  },
+  {
+   "fieldname": "company_vat_code",
+   "fieldtype": "Data",
+   "label": "Company VAT Code"
+  },
+  {
+   "fieldname": "check_vat",
+   "fieldtype": "Button",
+   "label": "Check VAT"
+  },
+  {
+   "fieldname": "column_break_h6yeo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "validation",
+   "fieldtype": "Data",
+   "label": "Validation"
+  },
+  {
+   "fieldname": "vat_number",
+   "fieldtype": "Data",
+   "label": "VAT Number"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "country_code",
+   "fieldtype": "Data",
+   "label": "Country Code"
+  },
+  {
+   "fieldname": "latest_exchange_rates_tab",
+   "fieldtype": "Tab Break",
+   "label": "Latest Exchange Rates"
+  },
+  {
+   "fieldname": "base_currency",
+   "fieldtype": "Data",
+   "label": "Base Currency"
+  },
+  {
+   "fieldname": "get_latest_rates",
+   "fieldtype": "Button",
+   "label": "Get Rates"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "rates",
+   "fieldtype": "Table",
+   "label": "Rates",
+   "options": "MERP Exchange Latest"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "MERP Exchange",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-25 15:50:52.362353",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "MERP Exchange",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

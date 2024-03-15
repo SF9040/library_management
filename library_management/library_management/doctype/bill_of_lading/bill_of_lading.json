@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-19 19:38:02.642148",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_filename_path",
+  "btn_start_ocr",
+  "informations_section",
+  "shipper_name",
+  "shipper_address",
+  "consignee_name",
+  "consignee_address",
+  "column_break_07yeh",
+  "transportation_method",
+  "shipment_date",
+  "description_table_section",
+  "details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "shipper_name",
+   "fieldtype": "Data",
+   "label": "Shipper Name"
+  },
+  {
+   "fieldname": "shipper_address",
+   "fieldtype": "Data",
+   "label": "Shipper Address"
+  },
+  {
+   "fieldname": "consignee_name",
+   "fieldtype": "Data",
+   "label": "Consignee Name"
+  },
+  {
+   "fieldname": "consignee_address",
+   "fieldtype": "Data",
+   "label": "Consignee Address"
+  },
+  {
+   "fieldname": "transportation_method",
+   "fieldtype": "Data",
+   "label": "Transportation Method"
+  },
+  {
+   "fieldname": "shipment_date",
+   "fieldtype": "Data",
+   "label": "Shipment Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bill of lading",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "full_filename_path",
+   "fieldtype": "Attach",
+   "label": "Full file name path"
+  },
+  {
+   "fieldname": "informations_section",
+   "fieldtype": "Section Break",
+   "label": "Informations"
+  },
+  {
+   "fieldname": "column_break_07yeh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description_table_section",
+   "fieldtype": "Section Break",
+   "label": "Description Table"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "label": "Details",
+   "options": "Goods Description"
+  },
+  {
+   "fieldname": "btn_start_ocr",
+   "fieldtype": "Button",
+   "label": "Start OCR"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-19 20:15:10.090944",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Bill of lading",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

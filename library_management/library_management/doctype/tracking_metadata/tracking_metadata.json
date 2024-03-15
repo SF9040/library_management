@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-13 21:26:17.304086",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shipmenttype",
+  "shipmentnumber",
+  "sealine",
+  "sealinename",
+  "shippingstatus",
+  "updatedat"
+ ],
+ "fields": [
+  {
+   "fieldname": "sealine",
+   "fieldtype": "Data",
+   "label": "Sealine"
+  },
+  {
+   "fieldname": "sealinename",
+   "fieldtype": "Data",
+   "label": "sealineName"
+  },
+  {
+   "fieldname": "shippingstatus",
+   "fieldtype": "Data",
+   "label": "shippingStatus"
+  },
+  {
+   "fieldname": "updatedat",
+   "fieldtype": "Data",
+   "label": "UpdatedAt"
+  },
+  {
+   "fieldname": "shipmenttype",
+   "fieldtype": "Data",
+   "label": "shipmentType"
+  },
+  {
+   "fieldname": "shipmentnumber",
+   "fieldtype": "Data",
+   "label": "shipmentNumber"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-14 03:48:32.139850",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Tracking Metadata",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
