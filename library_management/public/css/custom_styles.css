@@ -297,9 +297,9 @@ mark, .mark {
     opacity: 1 !important;
 }
 
-.col-lg-2.layout-side-section {
+/* .col-lg-2.layout-side-section {
     display: none;
-}
+} */
 
 .desk-alert.red {
     color: #ca150c !important;
