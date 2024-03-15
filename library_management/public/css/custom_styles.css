@@ -177,7 +177,7 @@ mark, .mark {
 
 .head-title, .comment-box .comment-input-header, .form-section .section-head, .form-dashboard-section .section-head {
     color: rgb(13, 18, 25) !important;
-    font-family: RMNeueTRIAL-Light, ui-sans-serif, "system-ui", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: 'RMNeueTRIAL-Regular', ui-sans-serif, "system-ui", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
     text-transform: uppercase !important;
 }
 
