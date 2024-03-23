@@ -177,7 +177,7 @@ mark, .mark {
 
 .head-title, .comment-box .comment-input-header, .form-section .section-head, .form-dashboard-section .section-head {
     color: rgb(13, 18, 25) !important;
-    font-family: 'RMNeueTRIAL-Regular', ui-sans-serif, "system-ui", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: sohne-var, "Helvetica Neue", Arial, sans-serif, ui-sans-serif, "system-ui", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
     text-transform: uppercase !important;
 }
 
@@ -544,8 +544,7 @@ mark, .mark {
     line-height: 1 !important;
     font-size: 33px;
     font-weight: 300 !important;
-    font-family: 'RMNeueTRIAL-Light' !important;
-    /* font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important; */
+    font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important;
 }
 .widget.spacer {
     background-color: transparent !important;
@@ -622,7 +621,8 @@ mark, .mark {
 
 .form-links .form-link-title {
     font-weight: 500 !important;
-    font-family: 'RMNeueTRIAL-Regular' !important;
+    font-family: sohne-var, "Helvetica Neue", Arial, sans-serif !important;
+    
 }
 
 .modal-dialog {
