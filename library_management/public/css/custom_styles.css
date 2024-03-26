@@ -690,7 +690,7 @@ mark,
     box-shadow: none !important;
 }
 
-.widget-title {
+.widget.links-widget-box .widget-title {
     text-transform: uppercase;
     font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Sarabun", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
     color: rgb(105, 115, 134) !important;
@@ -698,7 +698,7 @@ mark,
     font-size: 12px !important;
 }
 
-.widget-body .link-content {
+.widget.links-widget-box .widget-body .link-content {
     font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Sarabun", "Helvetica Neue", Ubuntu, sans-serif !important;
     color: rgb(60, 66, 87) !important;
     font-weight: 500 !important;
