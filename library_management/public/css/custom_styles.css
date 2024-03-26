@@ -645,3 +645,17 @@ mark, .mark {
 .modal-content {
     box-shadow: none !important;
 }
+
+  .widget-title {
+    text-transform: uppercase;
+      font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Sarabun", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    color: rgb(105, 115, 134) !important; 
+    font-weight: 600 !important;
+    font-size: 13px !important;
+  }
+  
+  .widget-body .link-content {
+    font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Sarabun", "Helvetica Neue", Ubuntu, sans-serif !important;
+    color: rgb(60, 66, 87) !important;
+    font-weight: 500 !important;
+  }
