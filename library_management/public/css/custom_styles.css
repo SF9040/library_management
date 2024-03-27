@@ -358,7 +358,7 @@ mark,
 }
 
 .frappe-control .ql-editor:not(.read-mode) {
-    background-color: #fff !important;
+    background-color: rgba(26, 57, 96, 0.1) !important;
 }
 
 .modal-backdrop {
