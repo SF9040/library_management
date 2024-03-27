@@ -764,8 +764,11 @@ input[type=checkbox] {
   font-weight: 500 !important;
   }
 
+
+  .widget.links-widget-box .link-item {
+    border-radius: 4px !important;
+  } 
+
   .widget.links-widget-box .link-item:hover {
     background-color: rgb(245, 248, 253) !important;
   }
-
-  
