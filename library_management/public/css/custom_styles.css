@@ -703,3 +703,8 @@ mark,
     color: rgb(60, 66, 87) !important;
     font-weight: 500 !important;
 }
+
+.std-form-layout > .form-layout > .form-page {
+    border: 1px solid rgb(229, 229, 229) !important;
+    box-shadow: none !important;
+  }
