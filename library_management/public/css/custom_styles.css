@@ -734,7 +734,7 @@ input[type=checkbox] {
 }
 
 .checkbox .label-area {
-    font-size: var(--text-md);
-	color: rgba(26, 41, 61, 0.796);
-	font-weight: 500;
+    font-size: var(--text-md) !important;
+	color: rgba(26, 41, 61, 0.796) !important;
+	font-weight: 500 !important;
 }
