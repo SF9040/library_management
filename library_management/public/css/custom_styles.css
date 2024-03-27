@@ -708,3 +708,33 @@ mark,
     border: 1px solid rgb(229, 229, 229) !important;
     box-shadow: none !important;
   }
+
+
+input[type=checkbox] {
+    background-color: rgba(28, 55, 90, 0.16) !important;
+    border: none;
+    box-shadow: none !important;
+    background-image: none !important;
+    background-size: contain !important;
+    height: 17px !important;
+    width: 17px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+}
+
+  input[type=checkbox]:checked {
+    background-color: rgb(0, 106, 245) !important;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBmaWxsPSIjZmZmIiBoZWlnaHQ9IjgwMHB4IiB3aWR0aD0iODAwcHgiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9InBvaW50ZXItZXZlbnRzOiBub25lO2Rpc3BsYXk6IGJsb2NrO3dpZHRoOiAxMDAlO2hlaWdodDogMTAwJTsiPjxnPjxwYXRoIGQ9Ik0zMTggNDkzYy0xNC0xNS0zOC0xNS01MyAwLTE0IDE1LTE0IDM4IDAgNTNsMTM2IDEzNmMxNSAxNSAzOSAxNSA1MyAwbDMyMy0zMjJjMTQtMTUgMTQtMzkgMC01My0xNS0xNS0zOS0xNS01MyAwbC0yOTYgMjk1LTExMC0xMDl6Ij48L3BhdGg+PC9nPjwvc3ZnPg==") !important;
+    background-size: contain !important;
+    height: 17px !important;
+    width: 17px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.checkbox .label-area {
+    font-size: var(--text-md);
+	color: rgba(26, 41, 61, 0.796);
+	font-weight: 500;
+}
