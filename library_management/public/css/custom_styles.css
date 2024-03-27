@@ -772,3 +772,8 @@ input[type=checkbox] {
   .widget.links-widget-box .link-item:hover {
     background-color: rgb(245, 248, 253) !important;
   }
+
+  .comment-box {
+    border: 1px solid rgb(229, 229, 229) !important;
+    box-shadow: none !important;
+  }
