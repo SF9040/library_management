@@ -540,6 +540,9 @@ mark,
 .page-content .awesomplete>ul {
 	min-width: 550px !important;
 }
+[data-page-route=Workspaces] .widget.number-widget-box:hover {
+	    box-shadow: inset 0 0 0 1px rgba(232, 234, 241, 0.7) !important;
+}
 
 [data-page-route=Workspaces] .widget.number-widget-box {
 	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
