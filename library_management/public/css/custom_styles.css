@@ -139,8 +139,8 @@ mark,
 }
 
 .form-tabs-list {
-    backdrop-filter: blur(5px) !important;
-    background-color: rgba(255, 255, 255, 0.8) !important;
+    /* backdrop-filter: blur(5px) !important; */
+    background-color: 1px solid rgb(229, 229, 229) !important;
 }
 
 .form-tabs-list .form-tabs .nav-item .nav-link {
@@ -775,6 +775,11 @@ input[type=checkbox] {
   }
 
   .comment-box {
+    border: 1px solid rgb(229, 229, 229) !important;
+    box-shadow: none !important;
+  }
+
+  .layout-main-section.frappe-card {
     border: 1px solid rgb(229, 229, 229) !important;
     box-shadow: none !important;
   }
