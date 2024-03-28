@@ -92,13 +92,14 @@ input::placeholder {
 }
 
 #navbar-breadcrumbs>li:not(:last-child)>a {
-    color: #a1aab5 !important;
+    color: rgb(87, 107, 133) !important;
     text-decoration: none !important;
     transition: color .4s cubic-bezier(.51, .92, .24, 1) !important;
+    font-weight: 500 !important;
 }
 
 #navbar-breadcrumbs>li:last-child>a {
-    color: #000 !important;
+    color: #0d1219 !important;
     font-weight: 600 !important;
 }
 
