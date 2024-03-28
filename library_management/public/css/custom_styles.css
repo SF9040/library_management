@@ -590,8 +590,8 @@ mark,
 .widget.number-widget-box .widget-body .widget-content .number {
 	line-height: 1 !important;
 	font-size: 33px;
-	font-weight: 300 !important;
-	font-family: 'Söhne VF', 'Söhne-VF', 'SF Pro Display', SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+	font-weight: 200 !important;
+	font-family: SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
 .widget.spacer {
@@ -726,7 +726,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	border: 1px solid rgb(229, 229, 229) !important;
 	box-shadow: none !important;
 }
-
 
 input[type=checkbox] {
 	background-color: rgba(28, 55, 90, 0.16) !important;
