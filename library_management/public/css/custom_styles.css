@@ -18,8 +18,8 @@
 
 .notifications-list {
     border-radius: 8px !important;
-    box-shadow: inset 0 0 0 1px rgb(187, 201, 220) !important;
-		background-color: #fff !important;
+    border: 1px solid rgb(0 0 0 / 8%) !important;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .04) !important;
 }
 .notifications-list .notification-item-tabs .notifications-category.active {
     border-bottom: 1px solid rgb(0, 95, 219) !important;
@@ -593,6 +593,57 @@ html {
 .alert-title-container .new-icon-lumo::before:hover {
     color: #5f4b18;
 }
+
+.alert-title-container .alert-conic-gradient {
+	  background-image: conic-gradient(from 180deg at 50% 50%, #0066cc, #0066cc, rgba(191, 219, 254, 0));
+    filter: blur(40px);
+    content: "";
+    height: 20px;
+    width: 100px;
+    left: 20px;
+    top: 0;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.alert-title-container .new-icon-lumo[data-indicator="yellow"]::before ,
+.alert-title-container .new-icon-lumo[data-indicator="warning"]::before {
+	color: #ffcc00;	
+}
+.alert-title-container .alert-conic-gradient[data-indicator="yellow"],
+.alert-title-container .alert-conic-gradient[data-indicator="warning"]{
+	background-image: conic-gradient(from 180deg at 50% 50%, #ffcc00, #ffcc00, rgba(191, 219, 254, 0))
+}
+
+
+.alert-title-container .new-icon-lumo[data-indicator="blue"]::before,
+.alert-title-container .new-icon-lumo[data-indicator="info"]::before {
+	color: #449CF0;	
+}
+.alert-title-container .alert-conic-gradient[data-indicator="blue"],
+.alert-title-container .alert-conic-gradient[data-indicator="info"]{
+	background-image: conic-gradient(from 180deg at 50% 50%, #449CF0, #449CF0, rgba(191, 219, 254, 0))
+}
+
+
+.alert-title-container .new-icon-lumo[data-indicator="red"]::before,
+.alert-title-container .new-icon-lumo[data-indicator="error"]::before{
+	color: #f06060;	
+}
+.alert-title-container .alert-conic-gradient[data-indicator="red"],
+.alert-title-container .alert-conic-gradient[data-indicator="error"]{
+	    background-image: conic-gradient(from 180deg at 50% 50%, #f06060, #f06060, rgba(191, 219, 254, 0));
+}
+
+.alert-title-container .new-icon-lumo[data-indicator="green"]::before,
+.alert-title-container .new-icon-lumo[data-indicator="success"]::before{
+	color: #34d399;	
+}
+.alert-title-container .alert-conic-gradient[data-indicator="green"],
+.alert-title-container .alert-conic-gradient[data-indicator="success"]{
+	    background-image: conic-gradient(from 180deg at 50% 50%, #34d399, #34d399, rgba(191, 219, 254, 0));
+}
+
 
 input[type=checkbox].disabled-selected, input[type=checkbox]:disabled:checked {
     background-color: rgb(0, 106, 245) !important;
