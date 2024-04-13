@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-11 23:36:51.462039",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "amount_withdrawn",
+  "amount_used",
+  "difference_amount",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Cash\nCoupon"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "amount_withdrawn",
+   "fieldtype": "Currency",
+   "label": "Withdrawn Amount",
+   "precision": "2"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "amount_used",
+   "fieldtype": "Currency",
+   "label": "Used Amount",
+   "precision": "2"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "difference_amount",
+   "fieldtype": "Currency",
+   "label": "Difference Amount",
+   "precision": "2"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-11 23:36:51.462039",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Trip Expenses",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
