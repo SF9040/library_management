@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-13 12:52:23.062385",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "column_break_pp1jv",
+  "item_name",
+  "column_break_pix5i",
+  "qty",
+  "against_sales_order",
+  "so_detail",
+  "against_sales_invoice",
+  "si_detail",
+  "dn_detail",
+  "section_break_iwpbv",
+  "reason",
+  "column_break_4j7rk",
+  "condition",
+  "damage_evidence_image",
+  "remark_section",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "against_sales_order",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Against Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "so_detail",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Against Sales Order Item"
+  },
+  {
+   "fieldname": "against_sales_invoice",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Against Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "si_detail",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Against Sales Invoice Item"
+  },
+  {
+   "fieldname": "dn_detail",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Against Delivery Note Item"
+  },
+  {
+   "depends_on": "eval:doc.condition == 'Unfixable';",
+   "fieldname": "damage_evidence_image",
+   "fieldtype": "Attach Image",
+   "label": "Damage Evidence Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Condition",
+   "options": "Good\nFixable\nUnfixable",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Reason",
+   "options": "Damaged\nCustomer orders the wrong item\nLoaded the wrong item to deliver\nWrong item on delivery note",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark",
+   "mandatory_depends_on": "eval:doc.condition == 'Unfixable';",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remark_section",
+   "fieldtype": "Section Break",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_pp1jv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pix5i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_iwpbv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4j7rk",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-13 14:46:41.834752",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Return Note Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
