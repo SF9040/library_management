@@ -57,8 +57,7 @@
   {
    "fieldname": "evidence_image",
    "fieldtype": "Attach Image",
-   "label": "Evidence",
-   "mandatory_depends_on": "eval:doc.actual_condition != 'Good';"
+   "label": "Evidence"
   },
   {
    "fieldname": "uom",
@@ -118,7 +117,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-04-15 13:39:57.704280",
+ "modified": "2024-04-16 11:03:09.189746",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Return Note Review",
