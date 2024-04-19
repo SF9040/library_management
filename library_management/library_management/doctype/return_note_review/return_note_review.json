@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-14 20:07:35.946223",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "uom",
+  "actual_quantity",
+  "actual_condition",
+  "evidence_image",
+  "against_sales_order",
+  "so_detail",
+  "against_sales_invoice",
+  "si_detail",
+  "dn_detail",
+  "remark_section",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "actual_quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Actual Qty.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actual_condition",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Condition",
+   "options": "Good\nFixable\nUnfixable",
+   "reqd": 1
+  },
+  {
+   "fieldname": "evidence_image",
+   "fieldtype": "Attach Image",
+   "label": "Evidence"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "against_sales_order",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Against Sales",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "so_detail",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Against Sales Order Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "against_sales_invoice",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Against Sales Invoice",
+   "options": "Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "si_detail",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Against Sales Invoice Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dn_detail",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Against Delivery Note Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remark_section",
+   "fieldtype": "Section Break",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-16 11:03:09.189746",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Return Note Review",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
