@@ -169,6 +169,8 @@ app_include_css = [
 #	"Task": "library_management.task.get_dashboard_data"
 # }
 
+calculate_item_values_override()
+
 # exempt linked doctypes from being automatically cancelled
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
