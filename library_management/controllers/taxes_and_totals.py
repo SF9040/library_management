@@ -83,6 +83,19 @@ def calculate_item_values(self):
 
             item.item_tax_amount = 0.0
 
+def calculate_total_net_weight(self):
+    if self.doc.meta.get_field("total_net_weight"):
+        self.doc.total_net_weight = 0.0
+        for d in self._items:
+            if d.total_weight:
+                if item.customizable_uom == 'LxW':
+                    customizable_sqm = item.customizable_length * item.customizable_width
+                    self.doc.total_net_weight += (d.total_weight * customizable_sqm)
+                else:
+                    self.doc.total_net_weight += d.total_weight
 
 def calculate_item_values_override():
     calculate_taxes_and_totals.calculate_item_values = calculate_item_values
+
+def calculate_total_net_weight_override():
+    calculate_taxes_and_totals.calculate_total_net_weight = calculate_total_net_weight

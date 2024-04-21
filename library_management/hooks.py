@@ -1,5 +1,6 @@
 from . import __version__ as app_version
 from library_management.controllers.taxes_and_totals import calculate_item_values_override
+from library_management.controllers.taxes_and_totals import calculate_total_net_weight_override
 
 app_name = "library_management"
 app_title = "Library Management"
@@ -173,6 +174,7 @@ app_include_js = [
 # }
 
 calculate_item_values_override()
+calculate_total_net_weight_override()
 
 # exempt linked doctypes from being automatically cancelled
 #
