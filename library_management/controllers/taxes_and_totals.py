@@ -65,7 +65,7 @@ def calculate_item_values(self):
             elif not item.qty and self.doc.get("is_debit_note"):
                 item.amount = flt(item.rate, item.precision("amount"))
             else:
-                if item.customizable_uom == 'LxW':
+                if item.is_customizable and item.customizable_uom == 'LxW':
                     customizable_sqm = item.customizable_length * item.customizable_width
                     item.amount = flt(
                         (item.rate * customizable_sqm) * item.qty, item.precision("amount"))
@@ -88,7 +88,7 @@ def calculate_total_net_weight(self):
         self.doc.total_net_weight = 0.0
         for d in self._items:
             if d.total_weight:
-                if d.customizable_uom == 'LxW':
+                if d.is_customizable and d.customizable_uom == 'LxW':
                     customizable_sqm = d.customizable_length * d.customizable_width
                     self.doc.total_net_weight += (d.total_weight * customizable_sqm)
                 else:
