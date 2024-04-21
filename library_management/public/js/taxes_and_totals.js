@@ -24,7 +24,14 @@ erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
                     }
                 }
 
-                item.net_amount = item.amount = flt(item.rate * qty, precision("amount", item));
+                if (item.customizable_uom === 'LxW') {
+                    let customizable_sqm = item.customizable_length * item.customizable_width;
+                    item.net_amount = item.amount = flt((item.rate * customizable_sqm) * qty, precision("amount", item));
+                    item.customizable_sqm = customizable_sqm;
+                } else {
+                    item.net_amount = item.amount = flt(item.rate * qty, precision("amount", item));
+                }
+
             }
 
             item.item_tax_amount = 0.0;

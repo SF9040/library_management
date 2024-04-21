@@ -1,6 +1,7 @@
 from frappe.utils import flt
 from erpnext.controllers.taxes_and_totals import calculate_taxes_and_totals
 
+
 def calculate_item_values(self):
     if self.doc.get("is_consolidated"):
         return
@@ -14,10 +15,13 @@ def calculate_item_values(self):
             elif item.price_list_rate:
                 if not item.rate or (item.pricing_rules and item.discount_percentage > 0):
                     item.rate = flt(
-                        item.price_list_rate * (1.0 - (item.discount_percentage / 100.0)), item.precision("rate")
+                        item.price_list_rate *
+                        (1.0 - (item.discount_percentage / 100.0)
+                         ), item.precision("rate")
                     )
 
-                    item.discount_amount = item.price_list_rate * (item.discount_percentage / 100.0)
+                    item.discount_amount = item.price_list_rate * \
+                        (item.discount_percentage / 100.0)
 
                 elif item.discount_amount and item.pricing_rules:
                     item.rate = item.price_list_rate - item.discount_amount
@@ -32,10 +36,13 @@ def calculate_item_values(self):
                 "Purchase Order Item",
                 "Purchase Receipt Item",
             ]:
-                item.rate_with_margin, item.base_rate_with_margin = self.calculate_margin(item)
+                item.rate_with_margin, item.base_rate_with_margin = self.calculate_margin(
+                    item)
                 if flt(item.rate_with_margin) > 0:
                     item.rate = flt(
-                        item.rate_with_margin * (1.0 - (item.discount_percentage / 100.0)), item.precision("rate")
+                        item.rate_with_margin *
+                        (1.0 - (item.discount_percentage / 100.0)
+                         ), item.precision("rate")
                     )
 
                     if item.discount_amount and not item.discount_percentage:
@@ -51,21 +58,31 @@ def calculate_item_values(self):
             item.net_rate = item.rate
 
             if (
-                not item.qty and self.doc.get("is_return") and self.doc.get("doctype") != "Purchase Receipt"
+                not item.qty and self.doc.get("is_return") and self.doc.get(
+                    "doctype") != "Purchase Receipt"
             ):
                 item.amount = flt(-1 * item.rate, item.precision("amount"))
             elif not item.qty and self.doc.get("is_debit_note"):
                 item.amount = flt(item.rate, item.precision("amount"))
             else:
-                item.amount = flt(item.rate * item.qty, item.precision("amount"))
+                if item.customizable_uom == 'LxW':
+                    customizable_sqm = item.customizable_length * item.customizable_width
+                    item.amount = flt(
+                        (item.rate * customizable_sqm) * item.qty, item.precision("amount"))
+                    item.customizable_sqm = customizable_sqm
+                else:
+                    item.amount = flt(item.rate * item.qty,
+                                      item.precision("amount"))
 
             item.net_amount = item.amount
 
             self._set_in_company_currency(
-                item, ["price_list_rate", "rate", "net_rate", "amount", "net_amount"]
+                item, ["price_list_rate", "rate",
+                       "net_rate", "amount", "net_amount"]
             )
 
             item.item_tax_amount = 0.0
-            
+
+
 def calculate_item_values_override():
-	calculate_taxes_and_totals.calculate_item_values = calculate_item_values
+    calculate_taxes_and_totals.calculate_item_values = calculate_item_values
