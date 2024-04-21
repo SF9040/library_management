@@ -88,8 +88,8 @@ def calculate_total_net_weight(self):
         self.doc.total_net_weight = 0.0
         for d in self._items:
             if d.total_weight:
-                if item.customizable_uom == 'LxW':
-                    customizable_sqm = item.customizable_length * item.customizable_width
+                if d.customizable_uom == 'LxW':
+                    customizable_sqm = d.customizable_length * d.customizable_width
                     self.doc.total_net_weight += (d.total_weight * customizable_sqm)
                 else:
                     self.doc.total_net_weight += d.total_weight
