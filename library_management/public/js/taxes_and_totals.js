@@ -14,6 +14,7 @@ erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
                 item.net_amount = item.amount = flt(item.rate * item.qty, precision("amount", item));
             }
             else {
+                console.log("::::::: library custom entered here")
                 // allow for '0' qty on Credit/Debit notes
                 let qty = flt(item.qty);
                 if (!qty) {
