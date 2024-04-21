@@ -40,6 +40,7 @@ erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
             if (item.customizable_uom === 'LxW') {
                 let customizable_sqm = item.customizable_length * item.customizable_width;
                 item.total_weight = flt((item.weight_per_unit * customizable_sqm) * item.stock_qty);
+                console.log ("--- Custom Library LxW item.total_weight: ", item.total_weight)
             }
             else {
                 item.total_weight = flt(item.weight_per_unit * item.stock_qty);
