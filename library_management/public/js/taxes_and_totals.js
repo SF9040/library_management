@@ -28,6 +28,7 @@ erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
                     let customizable_sqm = item.customizable_length * item.customizable_width;
                     item.net_amount = item.amount = flt((item.rate * customizable_sqm) * qty, precision("amount", item));
                     item.customizable_sqm = customizable_sqm;
+                    console.log("::::::: library custom customizable_sqm: ", customizable_sqm,  "item.net_amount: ", item.net_amount, "item.amount: ", item.amount )
                 } else {
                     item.net_amount = item.amount = flt(item.rate * qty, precision("amount", item));
                 }
