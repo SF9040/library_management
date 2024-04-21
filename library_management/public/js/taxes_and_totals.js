@@ -29,7 +29,7 @@ erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
                     let customizable_sqm = item.customizable_length * item.customizable_width;
                     item.net_amount = item.amount = flt((item.rate * customizable_sqm) * qty, precision("amount", item));
                     item.customizable_sqm = customizable_sqm;
-                    console.log("::::::: library custom customizable_sqm: ", customizable_sqm,  "item.net_amount: ", item.net_amount, "item.amount: ", item.amount )
+                    console.log("::::::: library custom customizable_sqm: ", customizable_sqm, "item.net_amount: ", item.net_amount, "item.amount: ", item.amount)
                 } else {
                     item.net_amount = item.amount = flt(item.rate * qty, precision("amount", item));
                 }
@@ -37,7 +37,13 @@ erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
             }
 
             item.item_tax_amount = 0.0;
-            item.total_weight = flt(item.weight_per_unit * item.stock_qty);
+            if (item.customizable_uom === 'LxW') {
+                let customizable_sqm = item.customizable_length * item.customizable_width;
+                item.total_weight = flt((item.weight_per_unit * customizable_sqm) * item.stock_qty);
+            }
+            else {
+                item.total_weight = flt(item.weight_per_unit * item.stock_qty);
+            }
 
             me.set_in_company_currency(item, ["price_list_rate", "rate", "amount", "net_rate", "net_amount"]);
         }
