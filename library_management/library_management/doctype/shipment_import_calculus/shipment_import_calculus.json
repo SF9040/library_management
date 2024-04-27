@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-25 22:07:59.830604",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "price_usd",
+  "f_value",
+  "price_adjustment",
+  "i_value",
+  "price_baht",
+  "import_duty_rate",
+  "import_duty_payable",
+  "vat_base",
+  "vat_rate",
+  "vat_payable"
+ ],
+ "fields": [
+  {
+   "fieldname": "price_usd",
+   "fieldtype": "Float",
+   "label": "Item Price (USD)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "price_baht",
+   "fieldtype": "Currency",
+   "label": "Item Price (THB)",
+   "read_only": 1
+  },
+  {
+   "default": "5",
+   "fieldname": "import_duty_rate",
+   "fieldtype": "Percent",
+   "label": "Import Duty Rate (%)"
+  },
+  {
+   "fieldname": "import_duty_payable",
+   "fieldtype": "Currency",
+   "label": "Import Duty Payable (THB)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vat_base",
+   "fieldtype": "Currency",
+   "label": "Base Amount for VAT Calculation (THB)",
+   "read_only": 1
+  },
+  {
+   "default": "7",
+   "fieldname": "vat_rate",
+   "fieldtype": "Percent",
+   "label": "VAT Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vat_payable",
+   "fieldtype": "Currency",
+   "label": "VAT Payable (THB)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "i_value",
+   "fieldtype": "Currency",
+   "label": "I Value (THB)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "f_value",
+   "fieldtype": "Float",
+   "label": "F Value (USD)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "price_adjustment",
+   "fieldtype": "Float",
+   "label": "Price Adjustment (USD)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-26 16:05:21.553520",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Shipment Import Calculus",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

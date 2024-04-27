@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-25 16:26:20.020811",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "purchase_order_against",
+  "item",
+  "description",
+  "arriving_quantity",
+  "price",
+  "uom",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "arriving_quantity",
+   "fieldtype": "Data",
+   "label": "Arriving Quantity"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "purchase_order_against",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Purchase Order Item"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "options": "UOM"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-25 18:51:08.360802",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Shipment Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -29,7 +29,8 @@
   "travel_itinerary",
   "expenses_details_tab",
   "costing_details",
-  "amended_from"
+  "amended_from",
+  "status"
  ],
  "fields": [
   {
@@ -161,12 +162,18 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nApproved\nComplete\nCancelled"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-01-09 21:52:31.523971",
+ "modified": "2024-04-26 01:24:15.977190",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Expenses",
