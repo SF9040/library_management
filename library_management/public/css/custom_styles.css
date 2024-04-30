@@ -1,4 +1,12 @@
 
+#navbar-breadcrumbs a:before {
+	font-family: 'Material Symbols Outlined' !important;
+	content: '\e5e1' !important;
+}
+
+#navbar-breadcrumbs a {
+	display: flex;
+}
 
 .grid-body .editable-row input[data-fieldtype="Percent"], 
 .grid-body .editable-row input[data-fieldtype="Currency"], 
