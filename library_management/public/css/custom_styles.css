@@ -10,7 +10,7 @@
 .grid-body .grid-row .data-row > div[data-fieldtype="Percent"],
 .grid-body .grid-row .data-row > div[data-fieldtype="Currency"],
 .grid-body .grid-row .data-row > div[data-fieldtype="Float"],
-.grid-body .grid-row .data-row > div[data-fieldtype="Int"],{
+.grid-body .grid-row .data-row > div[data-fieldtype="Int"]{
 	text-align: right !important;
 	justify-content: flex-end !important;
 	font-weight: 500;
