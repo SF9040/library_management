@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-02 17:11:38.833567",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "source_warehouse",
+  "remark",
+  "description",
+  "gl_entries",
+  "quantity",
+  "reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "gl_entries",
+   "fieldtype": "Data",
+   "label": "GL Entries"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-02 17:30:18.987972",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Repair Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
