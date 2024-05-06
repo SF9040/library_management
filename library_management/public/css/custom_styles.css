@@ -543,7 +543,7 @@ mark,
 [data-route^="print/Delivery Note/"],
 [data-route^="Form/Delivery Note/"] {
 	.navbar {
-		background-color: rgb(47 137 248 / 77%) !important;
+		background-color: #0073e6 !important;
 		transition: background-color 0.3s ease;
 		/* Property, Duration, Timing Function */
 
@@ -575,7 +575,7 @@ mark,
 [data-route^="print/Sales Invoice/"],
 [data-route^="Form/Sales Invoice/"] {
 	.navbar {
-		background-color: rgb(250 116 116 / 77%) !important;
+		background-color: #fa7474 !important;
 		transition: background-color 0.3s ease;
 		/* Property, Duration, Timing Function */
 
@@ -606,7 +606,7 @@ mark,
 [data-route^="print/Sales Order/"],
 [data-route^="Form/Sales Order/"] {
 	.navbar {
-		background-color: rgb(152 104 3 / 77%) !important;
+		background-color: #986803 !important;
 		transition: background-color 0.3s ease;
 		/* Property, Duration, Timing Function */
 	}
