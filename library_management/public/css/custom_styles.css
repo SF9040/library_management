@@ -238,6 +238,7 @@ input::placeholder {
 #navbar-breadcrumbs>li:last-child>a {
 	color: #0d1219 !important;
 	font-weight: 600 !important;
+	text-decoration: none !important;
 }
 
 /* .layout-main-section {
