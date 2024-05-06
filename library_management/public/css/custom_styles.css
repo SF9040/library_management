@@ -864,9 +864,10 @@ input[type=checkbox].disabled-selected, input[type=checkbox]:disabled:checked {
 }
 
 .page-head .page-head-content {
-	backdrop-filter: blur(5px) !important;
+	/* backdrop-filter: blur(5px) !important;
 	-webkit-backdrop-filter: blur(5px) !important;
-	background-color: transparent !important;
+	background-color: transparent !important; */
+	background-color: #fff !important;
 }
 
 .page-head {
