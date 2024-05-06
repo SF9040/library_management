@@ -559,14 +559,17 @@ mark,
 
 	.navbar #navbar-breadcrumbs>li:not(:last-child)>a {
 		color: #fff !important;
+		text-decoration: none;
 	}
 
 	.navbar #navbar-breadcrumbs a:before {
 		color: #fff !important;
+		text-decoration: none;
 	}
 
 	.navbar #navbar-breadcrumbs>li:last-child>a {
 		color: #fff !important;
+		text-decoration: none;
 	}
 }
 
