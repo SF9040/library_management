@@ -15,6 +15,8 @@
 	border: none;
 	box-shadow: none;
 	font-size: var(--text-xs);
+	border: 1px dashed rgba(28, 52, 84, 0.26);
+    color: rgba(28, 52, 84, 0.76);
 }
 
 #navbar-breadcrumbs a:before {
