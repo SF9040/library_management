@@ -1062,3 +1062,7 @@ input[type=checkbox]:checked {
     border-bottom-left-radius: 0px !important;
     border-top-left-radius: 0px !important;
 }
+
+.page-form {
+	align-items: center;
+}
