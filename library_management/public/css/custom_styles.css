@@ -1066,3 +1066,27 @@ input[type=checkbox]:checked {
 .page-form {
 	align-items: center;
 }
+
+.tooltip-inner {
+	background-color: #0F121B; /* Background color */
+	color: #ffffff;           /* Text color */
+	padding: 5px;   
+	border-radius: 8px !important;
+	  box-shadow: rgba(143, 143, 143, 0.2) 0px 1px 3px 0px, rgb(0, 0, 0) 0px 0px 0px 1px !important;
+	  font-family: Inter, sans-serif !important;
+	  font-weight: 500;
+	  font-size: 13px;
+  }
+  
+	  .tooltip.bs-tooltip-top .arrow::before {
+	border-top-color: #0F121B; /* Arrow color */
+  }
+  .tooltip.bs-tooltip-right .arrow::before {
+	border-right-color: #0F121B; /* Arrow color */
+  }
+  .tooltip.bs-tooltip-bottom .arrow::before {
+	border-bottom-color: #0F121B; /* Arrow color */
+  }
+  .tooltip.bs-tooltip-left .arrow::before {
+	border-left-color: #0F121B; /* Arrow color */
+  }
