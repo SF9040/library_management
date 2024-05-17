@@ -14,7 +14,7 @@ def get_external_data():
     )
 
     try:
-        with connection.cursor() as cursor:
+        with connection.cursor(pymysql.cursors.DictCursor) as cursor:
             # Example query to retrieve data from an external table
             sql = """SELECT
                 CarRegister AS 'vehicle_no',
