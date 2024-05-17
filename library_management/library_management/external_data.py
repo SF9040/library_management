@@ -1,6 +1,6 @@
 # library_management/library_management/external_data.py
 import pymysql
-from frappe import _
+import frappe
 
 
 def get_external_data():
