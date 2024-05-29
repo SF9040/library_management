@@ -1,0 +1,219 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-26 17:05:37.220732",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "designation",
+  "driver_name",
+  "column_break_neduj",
+  "weight_type",
+  "license_plate",
+  "weight_w",
+  "column_break_ohbcg",
+  "item_name",
+  "container_no",
+  "trailer_license_plate_2",
+  "trailer_license_plate_1",
+  "section_break_bujtb",
+  "weight_in",
+  "weight_in_time",
+  "set_weight_in",
+  "weight",
+  "set_weight",
+  "weight_time",
+  "column_break_ih82v",
+  "weight_out",
+  "weight_out_time",
+  "set_weight_out",
+  "column_break_pjhny",
+  "section_break_4ro9j",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "weight_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Weight Type",
+   "options": "Customer\nSupplier\nContainer\nTrailer\nItem\nDelivery\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name"
+  },
+  {
+   "fieldname": "license_plate",
+   "fieldtype": "Data",
+   "label": "License Plate"
+  },
+  {
+   "depends_on": "eval:doc.weight_type == 'Trailer'",
+   "fieldname": "trailer_license_plate_1",
+   "fieldtype": "Data",
+   "label": "Trailer License Plate 1"
+  },
+  {
+   "depends_on": "eval:doc.weight_type == 'Trailer'",
+   "fieldname": "trailer_license_plate_2",
+   "fieldtype": "Data",
+   "label": "Trailer License Plate 2"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Series",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.weight_type == 'Container'",
+   "fieldname": "container_no",
+   "fieldtype": "Data",
+   "label": "Container No"
+  },
+  {
+   "fieldname": "column_break_neduj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ohbcg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bujtb",
+   "fieldtype": "Section Break",
+   "label": "Weight Measurement"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.weight_type == 'Customer' || doc.weight_type == 'Supplier' || doc.weight_type == 'Container' || doc.weight_type == 'Trailer' || doc.weight_type == 'Delivery'",
+   "fieldname": "weight_in",
+   "fieldtype": "Float",
+   "label": "Weight In",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.weight_type == 'Customer' || doc.weight_type == 'Supplier' || doc.weight_type == 'Container' || doc.weight_type == 'Trailer' || doc.weight_type == 'Delivery'",
+   "fieldname": "weight_in_time",
+   "fieldtype": "Datetime",
+   "label": "Weight In Time",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.weight_type == 'Customer' || doc.weight_type == 'Supplier' || doc.weight_type == 'Container' || doc.weight_type == 'Trailer' || doc.weight_type == 'Delivery'",
+   "fieldname": "weight_out",
+   "fieldtype": "Float",
+   "label": "Weight Out",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.weight_type == 'Customer' || doc.weight_type == 'Supplier' || doc.weight_type == 'Container' || doc.weight_type == 'Trailer' || doc.weight_type == 'Delivery'",
+   "fieldname": "weight_out_time",
+   "fieldtype": "Datetime",
+   "label": "Weight Out Time",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.weight_type == 'Item' || doc.weight_type == 'Others'",
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_ih82v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pjhny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4ro9j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "depends_on": "eval:doc.weight_type == 'Customer' || doc.weight_type == 'Supplier' || doc.weight_type == 'Container' || doc.weight_type == 'Trailer' || doc.weight_type == 'Delivery'",
+   "fieldname": "set_weight_in",
+   "fieldtype": "Button",
+   "label": "Set Weight In"
+  },
+  {
+   "depends_on": "eval:(doc.weight_type == 'Customer' || doc.weight_type == 'Supplier' || doc.weight_type == 'Container' || doc.weight_type == 'Trailer' || doc.weight_type == 'Delivery') && doc.weight_in > 0",
+   "fieldname": "set_weight_out",
+   "fieldtype": "Button",
+   "label": "Set Weight Out"
+  },
+  {
+   "depends_on": "eval:doc.weight_type == 'Item' || doc.weight_type == 'Others'",
+   "fieldname": "weight_time",
+   "fieldtype": "Datetime",
+   "label": "Weight Time"
+  },
+  {
+   "depends_on": "eval:doc.weight_type == 'Item' || doc.weight_type == 'Others'",
+   "fieldname": "set_weight",
+   "fieldtype": "Button",
+   "label": "Set Weight"
+  },
+  {
+   "fieldname": "weight_w",
+   "fieldtype": "Int",
+   "label": "Current Weight",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.weight_type == 'Item' || doc.weight_type == 'Others'",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-29 01:45:38.935420",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Scale",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
