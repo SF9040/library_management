@@ -1078,7 +1078,7 @@ input[type=checkbox]:checked {
 
 .btn-primary {
 	border-radius: 8px !important;
-	box-shadow: rgba(143, 143, 143, 0.2) 0px 1px 3px 0px, rgb(235, 235, 235) 0px 0px 0px 1px !important;
+	box-shadow: rgba(0, 115, 230, 0.2) 0px 1px 3px 0px, rgb(0, 115, 230) 0px 0px 0px 1px !important;
 	font-family: Inter, sans-serif !important;
 	font-weight: 500;
 	font-size: 13px;
