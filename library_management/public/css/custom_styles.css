@@ -223,8 +223,8 @@ body {
 }
 
 .page-title .title-area .title-text {
-	font-family: 'Söhne VF', 'Söhne-VF', 'SF Pro Display', SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif !important;
-	font-weight: 700 !important;
+	font-family: Inter, 'SF Pro Display', SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+	font-weight: 600 !important;
 	color: #1a1a1a !important;
 }
 
@@ -797,7 +797,7 @@ input[type=checkbox]:disabled:checked {
 	animation-duration: .2s;
 	box-shadow: inset 0 0 0 1px rgba(232, 234, 241, 0.7) !important;
 	overflow: hidden !important;
-	font-family: 'Söhne VF', 'Söhne-VF', 'SF Pro Display', SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+	font-family: Inter, 'SF Pro Display', SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 	border-radius: 16px !important;
 }
 
@@ -923,7 +923,7 @@ h6,
 }
 
 [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .ce-header {
-	font-family: 'Söhne VF', 'Söhne-VF', 'SF Pro Display', SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+	font-family: Inter, 'SF Pro Display', SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 	text-transform: capitalize !important;
 	color: rgb(25, 36, 52) !important;
 	font-size: 26px !important;
@@ -1137,3 +1137,22 @@ input[type=checkbox]:checked {
 	border-left-color: #0F121B;
 	/* Arrow color */
 }
+
+.ce-block__content .ce-header{
+	border-radius: 8px !important;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+}
+.ce-block__content .ce-header div{
+	line-height: 1.5;
+	margin: 0;
+	padding: 4px;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: rgb(14, 36, 60) !important;
+  
+    font-family: Inter var, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
