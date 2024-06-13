@@ -37,7 +37,13 @@ erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
             }
 
             item.item_tax_amount = 0.0;
-            item.total_weight = flt(item.weight_per_unit * item.stock_qty);
+            if (item.is_customizable && item.is_customizable === 1 && item.customizable_uom === 'Wt') {
+
+                item.total_weight = flt(item.customizable_weight * item.stock_qty);
+            }
+            else {
+                item.total_weight = flt(item.weight_per_unit * item.stock_qty);
+            }
 
             me.set_in_company_currency(item, ["price_list_rate", "rate", "amount", "net_rate", "net_amount"]);
         }
