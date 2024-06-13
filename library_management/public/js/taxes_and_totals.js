@@ -30,7 +30,13 @@ erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
                     item.net_amount = item.amount = flt((item.rate * customizable_sqm) * qty, precision("amount", item));
                     item.customizable_sqm = customizable_sqm;
                     console.log("::::::: library custom customizable_sqm: ", customizable_sqm, "item.net_amount: ", item.net_amount, "item.amount: ", item.amount)
-                } else {
+                }
+                else if (item.is_customizable && item.is_customizable === 1 && item.customizable_uom === 'Wt') {
+                    let customizable_wt = item.customizable_weight;
+                    item.net_amount = item.amount = flt((item.rate * customizable_wt) * qty, precision("amount", item));
+                    console.log("::::::: library custom customizable_wt: ", customizable_wt, "item.net_amount: ", item.net_amount, "item.amount: ", item.amount)
+                }
+                 else {
                     item.net_amount = item.amount = flt(item.rate * qty, precision("amount", item));
                 }
 
