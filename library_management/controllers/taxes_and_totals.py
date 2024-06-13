@@ -96,8 +96,7 @@ def calculate_total_net_weight(self):
                     customizable_sqm = d.customizable_length * d.customizable_width
                     self.doc.total_net_weight += (d.total_weight * customizable_sqm)
                 elif d.get('is_customizable') is not None and d.is_customizable == 1 and d.customizable_uom == 'Wt':
-                    customizable_wt = d.customizable_weight
-                    self.doc.total_net_weight += (d.total_weight * customizable_wt * d.qty)
+                    self.doc.total_net_weight += (d.total_weight * d.customizable_weight * d.qty)
                 else:
                     self.doc.total_net_weight += d.total_weight
 
