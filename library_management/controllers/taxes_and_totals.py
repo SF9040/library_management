@@ -70,6 +70,10 @@ def calculate_item_values(self):
                     item.amount = flt(
                         (item.rate * customizable_sqm) * item.qty, item.precision("amount"))
                     item.customizable_sqm = customizable_sqm
+                elif item.get('is_customizable') is not None and item.is_customizable == 1 and item.customizable_uom == 'Wt':
+                    customizable_wt = item.customizable_weight
+                    item.amount = flt(
+                        (item.rate * customizable_wt) * item.qty, item.precision("amount"))
                 else:
                     item.amount = flt(item.rate * item.qty,
                                       item.precision("amount"))
