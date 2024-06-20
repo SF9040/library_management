@@ -52,7 +52,7 @@ erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
                 console.log("::::::: library custom total_weight: ", item.total_weight)
             }
             else {
-                item.total_weight = flt(item.weight_per_unit * item.stock_qty);
+                item.total_weight = flt(item.weight_per_unit * item.qty);
                 console.log("::::::: library custom total_weight: ", item.total_weight)
             }
 
