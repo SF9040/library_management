@@ -92,14 +92,7 @@ def calculate_total_net_weight(self):
         self.doc.total_net_weight = 0.0
         for d in self._items:
             if d.total_weight:
-                if d.get('is_customizable') is not None and d.is_customizable == 1 and d.customizable_uom == 'LxW':
-                    customizable_sqm = d.customizable_length * d.customizable_width
-                    self.doc.total_net_weight += (d.total_weight * customizable_sqm)
-                elif d.get('is_customizable') is not None and d.is_customizable == 1 and d.customizable_uom == 'Wt':
-                    self.doc.total_net_weight += (d.total_weight * d.customizable_weight * d.qty)
-                    print( "BRRRRRRRRRRRIAS",self.doc.total_net_weight,d.total_weight * d.customizable_weight, d.total_weight * d.customizable_weight * d.qty)
-                else:
-                    self.doc.total_net_weight += d.total_weight
+                self.doc.total_net_weight += d.total_weight
 
 def calculate_item_values_override():
     calculate_taxes_and_totals.calculate_item_values = calculate_item_values
