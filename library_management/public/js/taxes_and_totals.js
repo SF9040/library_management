@@ -2,7 +2,7 @@ frappe.provide("erpnext.public");
 frappe.provide("erpnext.controllers");
 
 erpnext.taxes_and_totals.prototype.calculate_item_values = function () {
-    var me = this;return ;
+    var me = this;
     if (!this.discount_amount_applied) {
         for (const item of this.frm._items || []) {
             frappe.model.round_floats_in(item);
