@@ -13,7 +13,8 @@
   "description",
   "qty",
   "stock_uom",
-  "po_percent"
+  "po_percent",
+  "container"
  ],
  "fields": [
   {
@@ -60,12 +61,17 @@
    "fieldname": "po_percent",
    "fieldtype": "Percent",
    "label": "P.O %"
+  },
+  {
+   "fieldname": "container",
+   "fieldtype": "Data",
+   "label": "Container"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-07 03:50:53.003309",
+ "modified": "2024-07-29 14:46:05.464523",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Shipment Item",
